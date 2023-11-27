@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity Wellness</title>
+
+<!-- CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="queries.css" />
+
+
+<!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  
+<!-- Boxicons CSS -->
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+     />
+  
+<!-- Cloudflare -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/be8e761534.js" crossorigin="anonymous"></script>
+
+
+
+<!-- Cloudflare -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+
+
+<!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  </head>
+
+
+<body>
+<!-- Navigation Bar -->
+    <header>
+      <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="#">Home</a></li>
+          <li class="menu-item"><a href="#">About</a></li>
+          <li class="menu-item">
+            <a class="sub-btn" href="#">Services <i class="fas fa-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="#">Sub Item 01</a></li>
+              <li class="sub-item"><a href="#">Sub Item 02</a></li>
+              <li class="sub-item"><a href="#">Sub Item 03</a></li>
+            </ul>
+          </li>
+          
+          <li class="menu-item"><a href="#">Providers</a></li>
+          <li class="menu-item"><a href="#">Forms</a></li>
+          <li class="menu-item"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="menu-btn"></div>
+    </header>
+
+    <script type="text/javascript">
+        //jquery for toggle dropdown menus
+        $(document).ready(function(){
+          //toggle sub-menus
+          $(".sub-btn").click(function(){
+            $(this).next(".sub-menu").slideToggle();
+          });
+    
+          //toggle more-menus
+          $(".more-btn").click(function(){
+            $(this).next(".more-menu").slideToggle();
+          });
+        });
+    
+        //javascript for the responsive navigation menu
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+    
+        menuBtn.addEventListener("click", () => {
+          menu.classList.add("active");
+        });
+    
+        closeBtn.addEventListener("click", () => {
+          menu.classList.remove("active");
+        });
+    
+        //javascript for the navigation bar effects on scroll
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        </script>
+
+ <!-- Hero Section -->
+
+ <div class="hero-image">
+ <div class="hero-text">
+    <h1 class="hero-title">Women's healthcare <br>
+      you can trust.</h1>
+    <p class="hero-subtitle">Lorem ipsum dolor sit amet <br>
+      lorem ipsum dolor sit amet consectetur.</p>
+    <button class="hero-button">Schedule Appointment</button>
+    </div>
+  </div>
+
+ <!-- Overview -->
+ <div class="container overview-container reveal">
+   <section class="overview reveal">
+    <div class="overview-image">
+      <img src="images/overview-img.png" alt="overview-image">
+    </div>
+    <div class="overview-content">
+      <h2 class="section-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita saepe culpa pariatur.</h2>
+      <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsum, 
+        dolores sed aut odit nihil dolor error impedit cum ullam molestiae, distinctio culpa facilis voluptates 
+        aliquid cumque quos doloremque sunt neque! Ea modi libero in rem illum nulla eveniet necessitatibus, harum 
+        eos animi quasi alias quas magnam accusamus, placeat veniam?</p>
+        <button class="secondary-cta-button">Meet Our Team</button>
+    </div>
+    
+   </section>
+ </div>
+
+   <!-- Services -->
+  <div class="services-container">
+    <div class="heading">
+      <h6 class="section-heading">Obgyn Services</h6> 
+    </div>
+    <div class="row">
+
+    <!-- ROW 1 -->
+      
+      <!-- Card 1 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+        </svg>
+        <h3 class="card-title">Contraception</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id esse.
+        </p>
+        <button class="card-cta-button">Contraception</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>   
+           <h3 class="card-title">Endometriosis</h3>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque modi aperiam aut.
+        </p>
+        <button class="card-cta-button">Endometriosis</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>   
+           <h3 class="card-title">Fibroids Treatment</h3>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque modi aperiam aut.
+        </p>
+        <button class="card-cta-button">Fibroids Treatment</button>
+      </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+          <h3 class="card-title">Menopause</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id esse.
+          </p>
+          <button class="card-cta-button">Menopause</button>
+        </div>
+
+         <!-- ROW 2 -->
+
+        <!-- Card 1 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+        </svg>
+        <h3 class="card-title">Minimally Invasive Surgery</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, omnis?
+        </p>
+        <button class="card-cta-button">Surgery</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>   
+           <h3 class="card-title">Nexplanon</h3>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque modi aperiam aut.
+        </p>
+        <button class="card-cta-button">Nexplanon</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>   
+           <h3 class="card-title">Pap Smear</h3>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque modi aperiam aut.
+        </p>
+        <button class="card-cta-button">Pap Smear</button>
+      </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+          <h3 class="card-title">PCOS Treatment</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id esse.
+          </p>
+          <button class="card-cta-button">PCOS Treatment</button>
+        </div>
+
+
+  <!-- ROW 3 -->
+
+        <!-- Card 1 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+        </svg>
+        <h3 class="card-title">Pelvic Pain</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, omnis? Lorem ipsum dolor sit.
+        </p>
+        <button class="card-cta-button">Pelvic Pain</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>   
+           <h3 class="card-title">Pregnancy Consultation</h3>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        </p>
+        <button class="card-cta-button">Pregnancy</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>   
+           <h3 class="card-title">Prenatal Care</h3>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque modi aperiam aut.
+        </p>
+        <button class="card-cta-button">Prenatal Care</button>
+      </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+          <h3 class="card-title">STD Testing</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id esse.
+          </p>
+          <button class="card-cta-button">STD Testing</button>
+        </div>
+
+  
+  <!-- ROW 4 -->
+
+        <!-- Card 1 -->
+        <div class="card">
+          <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+          <h3 class="card-title">Tubal Litigation</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, omnis? Lorem ipsum dolor sit.
+          </p>
+          <button class="card-cta-button">Tubal Litigation</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>   
+             <h3 class="card-title">Ultrasound</h3>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem, ipsum dolor.
+          </p>
+          <button class="card-cta-button">Ultrasound</button>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="card">
+          <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>   
+             <h3 class="card-title">UTI Treatment</h3>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque modi aperiam aut. 
+          </p>
+          <button class="card-cta-button">UTI Treatment</button>
+        </div>
+        
+          <!-- Card 4 -->
+          <div class="card">
+            <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+            </svg>
+            <h3 class="card-title">Well Woman Exam</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur id esse.
+            </p>
+            <button class="card-cta-button">Well Woman Exam</button>
+          </div>
+    </div>
+  </div>
+
+   <!-- Testimonials -->
+   <div class="container testimonials-container reveal">
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <!-- Testimonial #1 -->
+        <div class="slide swiper-slide">
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name"
+              >Keisha is a true artist who has provided me with both
+              kindness, excellent attention to detail, great communication,
+              professionalism and gorgeous eyebrows! </span
+            >
+            <span class="job">GISEL</span>
+          </div>
+        </div>
+        <!-- Testimonial #2 -->
+        <div class="slide swiper-slide">
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">
+              I have struggled for years with my brows and Keisha was able to
+              help me get them on point. 
+            </span>
+
+            <span class="job">ANGIE</span>
+          </div>
+        </div>
+        <!-- Testimonial #3 -->
+        <div class="slide swiper-slide">
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">
+              I've filled my eyebrows in for years now and was just over it.
+              I booked with Keish and had a great experience. She's
+              professional, prompt and dedicated to her art!
+            </span>
+
+            <span class="job">MELODY</span>
+          </div>
+        </div>
+        <!-- Testimonial #4 -->
+        <div class="slide swiper-slide">
+          <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+          <div class="details">
+            <span class="name">
+              I had minimal pain during the
+              process, and Keisha is a sweet soul very personable and
+              professional. Definitely recommend her!
+            </span>
+
+            <span class="job">SAKURA</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Schedule Appointment -->
+<div class="wrap">
+  <div class="appointment-content">
+  <div class="centered">
+    <h2 class="appointment-title">Lorem ipsum, dolor sit amet consectetur adipisicing.</h1>
+   
+    <button class="cta-button">Schedule Appointment</button>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="content">
+    <div class="left box">
+      <div class="upper">
+        <div class="topic">Address</div>
+        <div class="lower">
+          <div class="phone">
+            <a href="#"><i class="fas fa-location-dot"></i>811 E 11th St
+              Suite 104
+              Upland CA 91786</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="middle box">
+      <div class="topic">Contact</div>
+      <div class="lower">
+        <div class="phone">
+          <a href="#"><i class="fas fa-phone-volume"></i>(909) 985-0793</a>
+        </div>
+        <div class="email">
+          <a href="#"><i class="fas fa-envelope"></i>bestcareobgyn@yahoo.com</a>
+        </div>
+        <div class="fax">
+          <a href="#"><i class="fas fa-fax"></i>(909) 985-8326</a>
+        </div>
+      </div>
+     
+    </div>
+    <div class="right box">
+      <div class="topic">Hours</div>
+      <p>Monday-Friday 8AM-5PM</p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="bottom">
+    <p>© 2023 Best Care OBGYN  |   Website by <a href="#">Bloomboxx</a></p>
+  </div>
+</footer>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+    
+
+  </body>
+</html>
+
+      
