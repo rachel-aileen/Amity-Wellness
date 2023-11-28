@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #FFFEFC;
 }
 
 :root {
@@ -127,7 +127,7 @@ header.sticky .menu-item .sub-menu{
 
 .menu-item .sub-menu .sub-item a{
   color: var(--text-color);
-  font-size: 15px;
+  font-size: 12px;
   text-decoration: none;
   padding: 15px 30px;
   text-transform: uppercase;
@@ -203,7 +203,7 @@ header.sticky .menu-item .sub-menu{
 .hero-title {
   font-family: 'Canela Text Trial', sans-serif;                                   
   padding-bottom: 32px;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 100;
 }
 
@@ -737,3 +737,44 @@ footer a:hover{
     transform: scale(.8,.8);
   }
 }
+
+/* ////////// Javascript Scroll: Right and Left ////////// */
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1.2s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1.2s ease-in-out both;
+}
+
