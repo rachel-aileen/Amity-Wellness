@@ -10,7 +10,6 @@
 }
 
 body {
-  overflow-x: hidden !important;
   background-color: white;
 }
 
@@ -48,7 +47,7 @@ header{
   align-items: center;
   background: white;
   transition: 0.6s;
-  height: 14vh;
+  height: 12vh;
 }
 
 .logo{
@@ -188,7 +187,6 @@ header.sticky .menu-item .sub-menu{
   position: relative;
   height: 100vh;
   overflow: hidden;
-
   background-size: cover;
   background: url(/images/hero-img.png) no-repeat center center / cover; /* Adjust shadow color and opacity */
 }
@@ -303,7 +301,7 @@ header.sticky .menu-item .sub-menu{
 .overview-image {
   flex: 1;
   margin-right: 40px;
-  overflow: hidden;
+
 }
 
 .overview-image img {
@@ -714,7 +712,7 @@ footer a:hover{
 
 
 
-/* ///////// Javascript Scroll Reveal ////////// */
+/* ///////// Javascript Scroll Reveal: Top to Bottom ////////// */
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -727,4 +725,15 @@ footer a:hover{
   opacity: 1;
 }
 
+/* ////////// Javascript Scroll Reveal: Fade In ////////// */
+.scroll-fade-in-effect {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1.2s ease-in-out,
+    transform 1.2s ease-in-out;
 
+  &.is-hidden {
+    opacity: 0;
+    transform: scale(.8,.8);
+  }
+}

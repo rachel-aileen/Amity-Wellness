@@ -1,3 +1,38 @@
+// SCROLL REVEAL (FADE IN)
+;(function() {
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var scrollFadeInEffectEls = document.querySelectorAll(
+      ".scroll-fade-in-effect"
+    );
+
+    scrollFadeInInit(scrollFadeInEffectEls);
+
+    window.addEventListener("scroll", function() {
+      scrollFadeInEffect(scrollFadeInEffectEls);
+    });
+  });
+
+  function scrollFadeInInit(currentElements) {
+    var windowHeight = window.innerHeight;
+    for (var i = 0; i < currentElements.length; i++) {
+      var posFromTop = currentElements[i].getBoundingClientRect().top;
+      if (posFromTop - windowHeight > 0) {
+        currentElements[i].classList.add("is-hidden");
+      }
+    }
+  }
+
+  function scrollFadeInEffect(currentElements) {
+    var windowHeight = window.innerHeight;
+    for (var i = 0; i < currentElements.length; i++) {
+      var posFromTop = currentElements[i].getBoundingClientRect().top;
+      if (posFromTop - windowHeight <= 0) {
+        currentElements[i].classList.remove("is-hidden");
+      }
+    }
+  }
+})();
+
 // SCROLL REVEAL (TOP TO BOTTOM)
 window.addEventListener('scroll',reveal);
 
@@ -18,6 +53,8 @@ window.addEventListener('scroll',reveal);
       }
     }
   }
+
+
 
 // TESTIMONIALS SWIPER
 var swiper = new Swiper(".mySwiper", {
