@@ -1,8 +1,15 @@
 
 @import url('https://fonts.cdnfonts.com/css/crimson-text');
-@import url('https://fonts.cdnfonts.com/css/canela');
 @import url('https://fonts.cdnfonts.com/css/canela-text-trial');
 @import url('https://fonts.cdnfonts.com/css/hk-groteks');
+@import url('https://fonts.cdnfonts.com/css/sweet-sans-pro?weight=400,500,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+@font-face{
+  font-family: 'Sweet Sans Pro, Bold';
+  src: url('/sweet-sans-pro-fonts/SweetSansProBold.otf');
+  font-weight: bold;
+}
 
 *{
   margin: 0;
@@ -22,12 +29,14 @@ body {
 
   /* Color Variables */
   --primary-color: #DB9BB7;
-  --primary-color-hover: #AA94B3;
-  --secondary-color: #92749E;
-  --text-color: #2F4858;
+  --primary-color-hover: #92749E;
+  --secondary-color: #A68EAF;
+  --text-color: #435A68;
   --text-color-light: #F1E8F4;
+  --secondary-text-color: #75858F;
+  --tertiary-text-color: #667A86;
   --border-color: #E0B2C6;
-  --white-color: white;
+  --white-color: #FFFEFC;
   --section-bg: #F0E3E9;
 
   /* transition */
@@ -79,9 +88,9 @@ header .navigation .menu{
 }
 
 .menu-item > a{
-  color: var(--text-color);
+  color: var(--secondary-text-color);
   font-family: 'Sweet Sans Pro', sans-serif;                                     
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   text-decoration: none;
   margin: 20px;
@@ -129,12 +138,12 @@ header.sticky .menu-item .sub-menu{
 
 .menu-item .sub-menu .sub-item a{
   color: var(--text-color);
-  font-size: 11px;
+  font-size: 12px;
   text-decoration: none;
   padding: 15px 30px;
   text-transform: uppercase;
   font-family: 'Sweet Sans Pro', serif;
-  font-weight: 400;
+  font-weight: 300;
   transition: color 1s;
 }
 
@@ -207,6 +216,7 @@ header.sticky .menu-item .sub-menu{
   padding-bottom: 32px;
   font-size: 40px;
   font-weight: 100;
+  color: var(--text-color);
 }
 
 .hero-subtitle {
@@ -219,22 +229,22 @@ header.sticky .menu-item .sub-menu{
 }
 
 .hero-button {
-  background-color: var(--primary-color-hover);
+  background-color: #A68EAF;
   border: none;
   color: white;
   font-size: 14px;
-  font-family: "Sweet Sans Pro", sans-serif;
+  font-family: "Sweet Sans Pro, Bold";
   padding: 20px 32px;
   text-transform: uppercase;
   transition: background-color 1s;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   cursor: grab;
   font-weight: 500;
 
 }
 
 .hero-button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color-hover);
   color: white;
 }
 
@@ -257,6 +267,20 @@ header.sticky .menu-item .sub-menu{
 }
 
 /* ////////// Overview ////////// */
+
+.overview-popup {
+  align-items: center;
+  text-align: center;
+  margin-top: 8%;
+  font-size: 38px;
+  font-family: 'Canela Text Trial', sans-serif; 
+  font-weight: 100;
+  color: #787D98;
+  padding-right: 20%;
+  padding-left: 20%;
+  line-height: 1.4;
+}
+
 .heading {
   width: 90%;
   display: flex;
@@ -266,17 +290,17 @@ header.sticky .menu-item .sub-menu{
   text-align: center;
   margin: 20px auto;
 }
-
+ 
 .heading .section-heading {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--primary-color-hover);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   position: relative;
   text-transform: uppercase;
   font-family: 'Sweet Sans Pro', sans-serif;
   letter-spacing: 0.5px;
-  margin-top: 120px;
-  letter-spacing: 4px;
+  margin-top: 60px;
+  letter-spacing: 0.5px;
   font-weight: 600;
 
 }
@@ -288,7 +312,7 @@ header.sticky .menu-item .sub-menu{
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -319,7 +343,7 @@ header.sticky .menu-item .sub-menu{
 
 .overview-content .section-title {
   font-size: 28px;
-  color: var(--text-color);
+  color: var(--secondary-text-color);
   font-family: 'Canela Text Trial', sans-serif; 
   letter-spacing: 0.5px;
   font-weight: 100;
@@ -330,7 +354,7 @@ header.sticky .menu-item .sub-menu{
 .overview-content .section-subtitle {
   font-size: 20px;
   margin-bottom: 15px;
-  color: var(--text-color);
+  color: #808080;
   font-family: 'HK Grotesk', sans-serif; 
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -340,7 +364,7 @@ header.sticky .menu-item .sub-menu{
 .overview-content .section-text {
   font-size: 17px;
   line-height: 1.8;
-  color: var(--text-color);
+  color: var(--tertiary-text-color);
   font-family: 'HK Grotesk', sans-serif; 
   letter-spacing: 0.5px;
   font-weight: 300;
@@ -351,19 +375,19 @@ header.sticky .menu-item .sub-menu{
   background-color: transparent;
   border: none;
   text-underline-offset: 8px;
-  color: var(--primary-color-hover);
+  color: #B09BB9;
   font-size: 13px;
-  font-family: 'Sweet Sans Pro', sans-serif;   
+  font-family: 'Sweet Sans Pro, Bold';
   text-decoration: underline;
   text-transform: uppercase;
+  letter-spacing: 3px;
   transition: color 1s;
-  letter-spacing: 4px;
   cursor: grab;
-  font-weight: 700;
 }
 
 .secondary-cta-button:hover:hover {
   color: var(--primary-color);
+
 }
 
 .card-cta-button {
@@ -408,12 +432,12 @@ header.sticky .menu-item .sub-menu{
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
-  margin-right: 36px;
-  margin-left: 36px;
+  margin-right: 16px;
+  margin-left: 16px;
   background: var(--text-color-light);
   padding: 20px 20px;
   align-self: normal;
-  width: 25%;
+  width: 20%;
   margin-bottom: 36px;
 }
 
@@ -425,17 +449,18 @@ header.sticky .menu-item .sub-menu{
 }
 
 .card-title {
-  font-size: 25px;
+  font-size: 24px;
   color: var(--text-color);
-  font-family: "Canela Text Trial", sans-serif;
+  font-family: 'Canela Text Trial', sans-serif; 
   letter-spacing: 0.5px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .card-text {
   font-size: 17px;
+  font-family: 'HK Grotesk', sans-serif; 
   line-height: 1.8;
   color: var(--text-color);
   letter-spacing: 0.5px;
@@ -444,7 +469,6 @@ header.sticky .menu-item .sub-menu{
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
-  font-family: 'HK Grotesk', sans-serif;
 }
 
 /* ////////// Testimonials ////////// */
@@ -717,9 +741,9 @@ footer a:hover{
 /* ///////// Javascript Scroll Reveal: Top to Bottom ////////// */
 .reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(48px);
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 1.2s ease;
 }
 
 .reveal.active {
@@ -779,4 +803,3 @@ footer a:hover{
 .scrolled.slide-right {
   animation: slide-in-right 1.2s ease-in-out both;
 }
-

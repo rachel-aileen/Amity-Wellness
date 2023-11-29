@@ -178,6 +178,20 @@
 
   /*////////// Overview ////////// */
 
+  .overview-popup {
+    margin-top: 15%;
+    font-size: 28px;
+    font-family: 'Canela Text Trial', sans-serif; 
+    font-weight: 100;
+    color: #787D98;
+    padding-right: 0%;
+    padding-left: 0%;
+    line-height: 1.4;
+  }
+
+  .overview {
+    margin-top: 5%;
+  }
  
 
   .heading .section-heading {
