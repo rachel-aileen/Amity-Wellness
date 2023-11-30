@@ -1,3 +1,21 @@
+// HEADER SCROLL 
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('header');
+  header.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// SUBMENU SCROLL
+window.addEventListener('scroll', function() {
+  var submenu = document.querySelector('.sub-menu');
+  if (window.scrollY > 0) {
+      submenu.style.backgroundColor = '#FFFEFC';  // Changed to #FFFEFC
+  } else {
+      submenu.style.backgroundColor = 'transparent';
+  }
+});
+
+
+
 // SCROLL REVEAL (FADE IN)
 ;(function() {
   document.addEventListener("DOMContentLoaded", function(event) {
