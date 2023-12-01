@@ -541,11 +541,11 @@ header.sticky .menu-item .sub-menu{
 .attention-content .section-text {
   font-size: 17px;
   color: var(--text-color);
-  margin-bottom: 5%;
   position: relative;
   font-family: 'HK Grotesk', sans-serif; 
   letter-spacing: 0.5px;
   font-weight: 300;
+  margin-bottom: 5%;
 }
 
 .attention-btn {

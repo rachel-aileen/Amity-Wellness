@@ -6,12 +6,12 @@ window.addEventListener('scroll', function() {
 
 // SUBMENU SCROLL
 window.addEventListener('scroll', function() {
-  var submenu = document.querySelector('.sub-menu');
-  if (window.scrollY > 0) {
-      submenu.style.backgroundColor = '#FFFEFC';  // Changed to #FFFEFC
-  } else {
-      submenu.style.backgroundColor = 'transparent';
-  }
+    var submenu = document.querySelector('.sub-menu');
+    if (window.scrollY > 0) {
+        submenu.style.backgroundColor = '#FFFEFC';  // Changed to #FFFEFC
+    } else {
+        submenu.style.backgroundColor = 'transparent';
+    }
 });
 
 
@@ -42,7 +42,7 @@ window.addEventListener('scroll', function() {
 // SCROLL REVEAL (RIGHT AND LEFT)
 const scrollElements = document.querySelectorAll(".js-scroll");
 
-const elementInView = (el, dividend = 1) => {
+const elementInView = (el, dividend = 0) => {
   const elementTop = el.getBoundingClientRect().top;
 
   return (
