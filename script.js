@@ -8,12 +8,11 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     var submenu = document.querySelector('.sub-menu');
     if (window.scrollY > 0) {
-        submenu.style.backgroundColor = '#FFFEFC';  // Changed to #FFFEFC
+        submenu.style.backgroundColor = '#FFFEFC';  
     } else {
         submenu.style.backgroundColor = 'transparent';
     }
 });
-
 
 
 // SCROLL REVEAL (FADE IN)
