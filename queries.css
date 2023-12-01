@@ -232,7 +232,7 @@
 
    .services-container {
     margin-top: 56px;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .row {
@@ -299,6 +299,39 @@
     margin-right: 16px;
 
   }
+
+
+/* ////////// Virtual Consultation ////////// */
+
+.attention {
+  margin-top: 0px;
+  padding-top: 64px;
+  padding-bottom: 48px;
+  flex-direction: column-reverse;
+}
+
+.attention-content .section-title {
+  font-size: 48px;
+}
+
+.attention-content .section-text {
+  font-size: 20px;
+}
+
+.attention-image {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.attention-btn {
+  padding: 16px 28px;
+  border-radius: 50px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  letter-spacing: 1.5px;
+}
+
 
    /* ////////// BOOK APPOINTMENT ////////// */
    .wrap {

@@ -34,7 +34,7 @@ html, body {
   /* Color Variables */
   --primary-color: #DB9BB7;
   --primary-color-hover: #92749E;
-  --secondary-color: #A68EAF;
+  --secondary-color: #B09BB9;
   --text-color: #435A68;
   --text-color-light: #F1E8F4;
   --secondary-text-color: #75858F;
@@ -372,7 +372,7 @@ header.sticky .menu-item .sub-menu{
 .overview-content .section-text {
   font-size: 17px;
   line-height: 1.8;
-  color: var(--tertiary-text-color);
+  color: var(--text-color);
   font-family: 'HK Grotesk', sans-serif; 
   letter-spacing: 0.5px;
   font-weight: 300;
@@ -383,7 +383,7 @@ header.sticky .menu-item .sub-menu{
   background-color: transparent;
   border: none;
   text-underline-offset: 8px;
-  color: #B09BB9;
+  color: var(--secondary-color);
   font-size: 13px;
   font-family: 'Sweet Sans Pro, Bold';
   text-decoration: underline;
@@ -450,7 +450,7 @@ header.sticky .menu-item .sub-menu{
 }
 
 .custom-icon {
-  fill: var(--primary-color-hover);
+  fill: var(--secondary-color);
   margin-top: 24px;
   margin-bottom: 24px;
   align-self: center;
@@ -478,6 +478,94 @@ header.sticky .menu-item .sub-menu{
   padding-left: 24px;
   padding-right: 24px;
 }
+
+
+/* ////////// Virtual Consultation ////////// */
+
+.attention-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--section-bg);
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin-top: 5%;
+}
+
+.attention {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.attention-image {
+  flex: 1;
+
+  overflow: hidden;
+}
+
+.attention img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding-left: 5%;
+}
+
+.attention-content {
+  flex: 1;
+  padding-left: 10%;
+}
+
+.attention-content .section-title {
+  font-size: 28px;
+  color: var(--secondary-text-color);
+  font-family: 'Canela Text Trial', sans-serif; 
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  padding-top: 15px;
+  margin-bottom: 5%;
+}
+
+.attention-content .section-heading {
+  font-size: 20px;
+  color: var(--tertiary-text-color);
+  position: relative;
+  text-transform:capitalize;
+  font-family: 'HK Grotesk', sans-serif; 
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+
+.attention-content .section-text {
+  font-size: 17px;
+  color: var(--text-color);
+  margin-bottom: 5%;
+  position: relative;
+  font-family: 'HK Grotesk', sans-serif; 
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+.attention-btn {
+  display: inline-block;
+  padding: 22px 40px;
+  color: var(--primary-color-hover);
+  background: var(--text-color);
+  border-radius: 50px;
+  font-size: 20px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;                                             
+  letter-spacing: 1px;
+}
+
+.attention-btn:hover {
+  transform: scale(1.05);
+}
+
+
 
 /* ////////// Testimonials ////////// */
 
