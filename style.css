@@ -1,5 +1,3 @@
-
-@import url('https://fonts.cdnfonts.com/css/crimson-text');
 @import url('https://fonts.cdnfonts.com/css/canela-text-trial');
 @import url('https://fonts.cdnfonts.com/css/hk-groteks');
 @import url('https://fonts.cdnfonts.com/css/sweet-sans-pro?weight=400,500,700,900');
@@ -23,13 +21,16 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrollbar */
-  background-color: #FFFEFC;
+  background-color: var(--white-color);
 }
 
 :root {
   /* Font Sizes & Family */
+  --primary-font: 'Canela Text Trial', sans-serif;
+  --secondary-font: 'HK Grotesk', sans-serif;  
+  --button-font: "Sweet Sans Pro, Bold";
+  --button-font-light: 'Sweet Sans Pro', serif;
 
-  --body-font: "Sofia Pro", sans-serif;
 
   /* Color Variables */
   --primary-color: #DB9BB7;
@@ -97,7 +98,7 @@ header .navigation .menu{
 
 .menu-item > a{
   color: var(--secondary-text-color);
-  font-family: 'Sweet Sans Pro', sans-serif;                                     
+  font-family: var(--button-font-light);                                
   font-size: 12px;
   font-weight: 400;
   text-decoration: none;
@@ -150,7 +151,7 @@ header.sticky .menu-item .sub-menu{
   text-decoration: none;
   padding: 15px 30px;
   text-transform: uppercase;
-  font-family: 'Sweet Sans Pro', serif;
+  font-family: var(--button-font-light);
   font-weight: 300;
   transition: color 1s;
 }
@@ -194,8 +195,6 @@ header.sticky .menu-item .sub-menu{
   transition: 0.3s;
 }
 
-
-
 .menu-btn{
   display: none;
 }
@@ -220,7 +219,7 @@ header.sticky .menu-item .sub-menu{
 }
 
 .hero-title {
-  font-family: 'Canela Text Trial', sans-serif;                                   
+  font-family: var(--primary-font);                                 
   padding-bottom: 32px;
   font-size: 40px;
   font-weight: 100;
@@ -228,7 +227,7 @@ header.sticky .menu-item .sub-menu{
 }
 
 .hero-subtitle {
-  font-family: 'HK Grotesk', sans-serif;                                          
+  font-family: var(--secondary-font);                                        
   letter-spacing: 0.5px;
   font-size: 20px;
   padding-bottom: 32px;
@@ -241,7 +240,7 @@ header.sticky .menu-item .sub-menu{
   border: none;
   color: white;
   font-size: 14px;
-  font-family: "Sweet Sans Pro, Bold";
+  font-family: var(--button-font);
   padding: 20px 32px;
   text-transform: uppercase;
   transition: background-color 1s;
@@ -281,12 +280,13 @@ header.sticky .menu-item .sub-menu{
   text-align: center;
   margin-top: 8%;
   font-size: 38px;
-  font-family: 'Canela Text Trial', sans-serif; 
+  font-family: var(--primary-font);
   font-weight: 100;
   color: #787D98;
   padding-right: 20%;
   padding-left: 20%;
   line-height: 1.4;
+  margin-bottom: 7%;
 }
 
 .heading {
@@ -305,7 +305,7 @@ header.sticky .menu-item .sub-menu{
   margin-bottom: 24px;
   position: relative;
   text-transform: uppercase;
-  font-family: 'Sweet Sans Pro, Bold';
+  font-family: var(--button-font);
   letter-spacing: 0.5px;
   margin-top: 9%;
   letter-spacing: 4px;
@@ -329,7 +329,7 @@ header.sticky .menu-item .sub-menu{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 120px;
+  margin-top: 6%;
 }
 
 .overview-image {
@@ -352,10 +352,10 @@ header.sticky .menu-item .sub-menu{
 .overview-content .section-title {
   font-size: 28px;
   color: var(--secondary-text-color);
-  font-family: 'Canela Text Trial', sans-serif; 
+  font-family: var(--primary-font);
   letter-spacing: 0.5px;
   font-weight: 100;
-  padding-bottom: 24px;
+  margin-bottom: 6%;
   padding-top: 15px;
 }
 
@@ -363,20 +363,20 @@ header.sticky .menu-item .sub-menu{
   font-size: 20px;
   margin-bottom: 15px;
   color: #808080;
-  font-family: 'HK Grotesk', sans-serif; 
+  font-family: var(--secondary-font);
   font-weight: 400;
   letter-spacing: 0.5px;
-  padding-bottom: 20px;
+  margin-bottom: 6%;
 }
 
 .overview-content .section-text {
   font-size: 17px;
   line-height: 1.8;
   color: var(--text-color);
-  font-family: 'HK Grotesk', sans-serif; 
+  font-family: var(--secondary-font);
   letter-spacing: 0.5px;
   font-weight: 300;
-  padding-bottom: 20px;
+  margin-bottom: 6%;
 }
 
 .secondary-cta-button {
@@ -385,7 +385,7 @@ header.sticky .menu-item .sub-menu{
   text-underline-offset: 8px;
   color: var(--secondary-color);
   font-size: 13px;
-  font-family: 'Sweet Sans Pro, Bold';
+  font-family: var(--button-font);
   text-decoration: underline;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -404,7 +404,7 @@ header.sticky .menu-item .sub-menu{
   text-underline-offset: 8px;
   color: var(--secondary-color);
   font-size: 13px;
-  font-family: 'Sweet Sans Pro, Bold';  
+  font-family: var(--button-font);
   text-decoration: underline;
   text-transform: uppercase;
   transition: color 1s;
@@ -425,6 +425,7 @@ header.sticky .menu-item .sub-menu{
 .services-container {
   max-width: 85%;
   margin: 0 auto;
+
 }
 
 .row {
@@ -459,7 +460,7 @@ header.sticky .menu-item .sub-menu{
 .card-title {
   font-size: 24px;
   color: var(--text-color);
-  font-family: 'Canela Text Trial', sans-serif; 
+  font-family: var(--primary-font);
   letter-spacing: 0.5px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -468,7 +469,7 @@ header.sticky .menu-item .sub-menu{
 
 .card-text {
   font-size: 17px;
-  font-family: 'HK Grotesk', sans-serif; 
+  font-family: var(--secondary-font);
   line-height: 1.8;
   color: var(--text-color);
   letter-spacing: 0.5px;
@@ -482,7 +483,7 @@ header.sticky .menu-item .sub-menu{
 
 /* ////////// Virtual Consultation ////////// */
 
-.attention-container {
+.consultation-container {
   width: 100%;
   margin: 0 auto;
   background-color: var(--section-bg);
@@ -491,78 +492,78 @@ header.sticky .menu-item .sub-menu{
   margin-top: 5%;
 }
 
-.attention {
+.consultation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.attention-image {
+.consultation-image {
   flex: 1;
-
   overflow: hidden;
 }
 
-.attention img {
+
+.consultation img {
   max-width: 100%;
   height: auto;
   display: block;
-  padding-left: 5%;
+  padding-left: 0%;
+  align-items: center;
+  justify-content: center;
 }
 
-.attention-content {
+.consultation-content {
   flex: 1;
   padding-left: 10%;
 }
 
-.attention-content .section-title {
+.consultation-content .section-title {
   font-size: 28px;
   color: var(--secondary-text-color);
-  font-family: 'Canela Text Trial', sans-serif; 
+  font-family: var(--primary-font);
   letter-spacing: 0.5px;
   font-weight: 100;
   padding-top: 15px;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
-.attention-content .section-heading {
+.consultation-content .section-heading {
   font-size: 20px;
   color: var(--tertiary-text-color);
   position: relative;
   text-transform:capitalize;
-  font-family: 'HK Grotesk', sans-serif; 
+  font-family: var(--secondary-font);
   letter-spacing: 0.5px;
   font-weight: 400;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
 
-.attention-content .section-text {
+.consultation-content .section-text {
   font-size: 17px;
   color: var(--text-color);
   position: relative;
-  font-family: 'HK Grotesk', sans-serif; 
+  font-family: var(--secondary-font);
   letter-spacing: 0.5px;
   font-weight: 300;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
-.attention-btn {
-  display: inline-block;
-  padding: 22px 40px;
-  color: var(--primary-color-hover);
-  background: var(--text-color);
-  border-radius: 50px;
-  font-size: 20px;
-  border: 2px solid transparent;
-  transition: all 0.4s ease;
-  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;                                             
-  letter-spacing: 1px;
-}
 
-.attention-btn:hover {
-  transform: scale(1.05);
+/* ////////// Approach ////////// */
+.approach-heading {
+  font-size: 14px;
+  text-align: center;
+  color: var(--secondary-color);
+  position: relative;
+  text-transform: uppercase;
+  font-family: var(--button-font);
+  letter-spacing: 0.5px;
+  margin-top: 9%;
+  letter-spacing: 4px;
+  font-weight: 600;
 }
 
 
@@ -614,7 +615,7 @@ header.sticky .menu-item .sub-menu{
 .details .name {
   font-size: 24px;
   color: var(--text-color);
-  font-family: 'Canela Text Trial', sans-serif;  
+  font-family: var(--primary-font);
   letter-spacing: 0.5px;
   font-weight: 300;
   margin-top: 20px;
@@ -628,7 +629,7 @@ header.sticky .menu-item .sub-menu{
   color: var(--border-color);
   position: relative;
   text-transform: uppercase;
-  font-family: "Sweet Sans Pro", sans-serif;
+  font-family: var(--button-font-light);
   letter-spacing: 0.5px;
 }
 /* swiper button css */
