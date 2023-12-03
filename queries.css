@@ -342,8 +342,9 @@
    /*////////// Philosophy & Principles //////////*/
 
    .philosophy-container {
-    margin-top: 56px;
-    max-width: 90%;
+    margin-top: 8%;
+    max-width: 100%;
+    padding-top: 1%;
   }
 
   .row.philosophy {
@@ -351,13 +352,17 @@
   }
 
   .card.philosophy {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 2%;
+    margin-left: 2%;
     padding: 24px;
     width: 100%;
     margin-bottom: 24px;
+    height: 500px;
   }
 
+  .card-title.philosophy {
+    padding-bottom: 2%;
+  }
 
   .card-text {
     margin-bottom: 20px;

@@ -461,7 +461,7 @@ header.sticky .menu-item .sub-menu{
   color: var(--tertiary-text-color) !important;
   font-family: var(--primary-font);
   letter-spacing: 0.5px;
-  font-weight: 300;
+  font-weight: 100;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -581,32 +581,37 @@ header.sticky .menu-item .sub-menu{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-right: 6%;
+  margin-left: 6%;
 }
 
 
 .card.philosophy {
   display: flex;
+  height: 500px;
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
   margin-right: 16px;
   margin-left: 16px;
-  background: white;
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 20px 20px;
   align-self: normal;
   width: 20%;
   margin-bottom: 36px;
+  overflow: hidden;
 }
 
 
-.card-title .philosophy {
+.card-title.philosophy {
   font-size: 24px;
-  color: var(--text-color);
+  color: var(--secondary-text-color) !important;
   font-family: var(--primary-font);
   letter-spacing: 0.5px;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-weight: 100;
   text-align: center;
+  padding-top: 10%;
+  padding-bottom: 4%;
 }
 
 .card-text {
