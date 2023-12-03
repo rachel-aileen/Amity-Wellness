@@ -261,7 +261,8 @@
     padding-right: 8px;
   }
 
-   /* Testimonials */
+
+   /* ////////// Testimonials ////////// */
    .testimonials-container {
     height: 60vh;
   }
@@ -336,6 +337,33 @@
   margin-bottom: 32px;
   width: 100%;
 }
+
+
+   /*////////// Philosophy & Principles //////////*/
+
+   .philosophy-container {
+    margin-top: 56px;
+    max-width: 90%;
+  }
+
+  .row .philosophy {
+    justify-content: space-evenly;
+  }
+
+  .card .philosophy {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 24px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+
+  .card-text {
+    margin-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 
 
 

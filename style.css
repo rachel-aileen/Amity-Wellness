@@ -425,7 +425,6 @@ header.sticky .menu-item .sub-menu{
 .services-container {
   max-width: 85%;
   margin: 0 auto;
-
 }
 
 .row {
@@ -459,7 +458,7 @@ header.sticky .menu-item .sub-menu{
 
 .card-title {
   font-size: 24px;
-  color: var(--text-color);
+  color: var(--tertiary-text-color) !important;
   font-family: var(--primary-font);
   letter-spacing: 0.5px;
   font-weight: 300;
@@ -471,7 +470,7 @@ header.sticky .menu-item .sub-menu{
   font-size: 17px;
   font-family: var(--secondary-font);
   line-height: 1.8;
-  color: var(--text-color);
+  color: var(--text-color)!important;
   letter-spacing: 0.5px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -565,6 +564,64 @@ header.sticky .menu-item .sub-menu{
   letter-spacing: 4px;
   font-weight: 600;
 }
+
+/* ////////// Philosophy & Principles ////////// */
+
+.philosophy-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: url(images/philosophy-background.png);
+  background-size: cover;
+  margin-top: 8%;
+  padding-bottom: 6%;
+}
+
+.row .philosophy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.card .philosophy {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
+  background: white !important;
+  padding: 20px 20px;
+  align-self: normal;
+  width: 20%;
+  margin-bottom: 36px;
+}
+
+
+.card-title .philosophy {
+  font-size: 24px;
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 17px;
+  font-family: var(--secondary-font);
+  line-height: 1.8;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 
 
 
