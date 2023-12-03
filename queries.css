@@ -346,11 +346,11 @@
     max-width: 90%;
   }
 
-  .row .philosophy {
+  .row.philosophy {
     justify-content: space-evenly;
   }
 
-  .card .philosophy {
+  .card.philosophy {
     margin-right: 20px;
     margin-left: 20px;
     padding: 24px;

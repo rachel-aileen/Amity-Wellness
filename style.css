@@ -576,7 +576,7 @@ header.sticky .menu-item .sub-menu{
   padding-bottom: 6%;
 }
 
-.row .philosophy {
+.row.philosophy {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -584,14 +584,14 @@ header.sticky .menu-item .sub-menu{
 }
 
 
-.card .philosophy {
+.card.philosophy {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
   margin-right: 16px;
   margin-left: 16px;
-  background: white !important;
+  background: white;
   padding: 20px 20px;
   align-self: normal;
   width: 20%;
