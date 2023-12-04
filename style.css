@@ -36,6 +36,7 @@ html, body {
   --primary-color: #DB9BB7;
   --primary-color-hover: #92749E;
   --secondary-color: #B09BB9;
+  --tertiary-color: #FFF5FC;
   --text-color: #435A68;
   --text-color-light: #F1E8F4;
   --secondary-text-color: #75858F;
@@ -539,7 +540,6 @@ header.sticky .menu-item .sub-menu{
   margin-bottom: 6%;
 }
 
-
 .consultation-content .section-text {
   font-size: 17px;
   color: var(--text-color);
@@ -548,6 +548,7 @@ header.sticky .menu-item .sub-menu{
   letter-spacing: 0.5px;
   font-weight: 300;
   margin-bottom: 6%;
+  padding-right: 25%;
 }
 
 
@@ -570,7 +571,7 @@ header.sticky .menu-item .sub-menu{
 .philosophy-container {
   max-width: 100%;
   margin: 0 auto;
-  background-image: url(images/philosophy-background.png);
+  background-image: url(images/pink-sunset-img.png);
   background-size: cover;
   margin-top: 8%;
   padding-bottom: 6%;
@@ -639,7 +640,7 @@ header.sticky .menu-item .sub-menu{
   align-items: center;
   justify-content: center;
   background-color: white;
-  margin-top: 0px;
+
 }
 
 .testimonial {
@@ -661,10 +662,9 @@ header.sticky .menu-item .sub-menu{
   width: 100%;
 }
 .slide .quote-icon {
-  font-size: 48px;
+  font-size: 64px;
   color: var(--section-bg);
   position: sticky;
-  margin-top: 8px !important;
 }
 .slide .details {
   display: flex;
@@ -679,20 +679,21 @@ header.sticky .menu-item .sub-menu{
   color: var(--text-color);
   font-family: var(--primary-font);
   letter-spacing: 0.5px;
-  font-weight: 300;
+  font-weight: 100;
   margin-top: 20px;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 32px !important;
   text-align: center;
+  line-height: 1.5;
 }
 .details .job {
-  font-size: 17px;
-  color: var(--border-color);
+  font-size: 14px;
+  color: var(--secondary-text-color);
   position: relative;
   text-transform: uppercase;
-  font-family: var(--button-font-light);
-  letter-spacing: 0.5px;
+  font-family: var(--button-font);
+  letter-spacing: 4px;
 }
 /* swiper button css */
 .nav-btn {
@@ -702,6 +703,7 @@ header.sticky .menu-item .sub-menu{
   transform: translateY(30px);
   background-color: transparent;
   transition: 0.5s;
+
 }
 
 .nav-btn::after,
@@ -728,6 +730,84 @@ header.sticky .menu-item .sub-menu{
   pointer-events: none; /* Prevent interaction with hidden slide */
 }
 
+
+/* ////////// Pregnancy ////////// */
+
+.pregnancy-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--tertiary-color);
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin-top: 5%;
+}
+
+.pregnancy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pregnancy-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.pregnancy img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding-left: 0%;
+  padding-right: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.pregnancy .section-heading {
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-bottom: 24px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: var(--button-font);
+    letter-spacing: 0.5px;
+    margin-top: 9%;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.pregnancy-content {
+  flex: 1;
+  padding-left: 10%;
+}
+
+.pregnancy-content .section-title {
+  font-size: 28px;
+  color: var(--secondary-text-color);
+  font-family: var(--primary-font);
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  padding-top: 15px;
+  margin-bottom: 6%;
+}
+
+
+.pregnancy-content .section-text {
+  font-size: 17px;
+  color: var(--text-color);
+  position: relative;
+  font-family: var(--secondary-font);
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  margin-bottom: 6%;
+  padding-right: 25%;
+  line-height: 1.8;
+}
+
+
+
+
 /* ////////// BOOK APPOINTMENT ////////// */
 .wrap {
   margin-right: 200px;
@@ -753,7 +833,7 @@ header.sticky .menu-item .sub-menu{
   background-size: cover;
   justify-content: center;
   background-position: center;
-  background-color: var(--section-bg);
+  background-color: orange;
 }
 
 .appointment-title {

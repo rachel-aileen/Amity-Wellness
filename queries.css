@@ -193,8 +193,6 @@
     margin-top: 5%;
   }
 
- 
-
   .heading .section-heading {
     font-size: 14px;
     margin-top: 48px;
@@ -221,7 +219,7 @@
   }
   .overview-image {
     margin-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 4%;
   }
 
   .overview-content {
@@ -264,7 +262,7 @@
 
    /* ////////// Testimonials ////////// */
    .testimonials-container {
-    height: 60vh;
+    height: 100vh;
   }
   
    .slide .details {
@@ -276,8 +274,12 @@
     margin-right: 50px;
   }
 
+  .slide .quote-icon {
+    font-size: 64px;
+  }
+
   .details .name {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 100;
     margin-top: 20px;
     margin-left: 24px;
@@ -331,15 +333,16 @@
 .consultation-content .section-text {
   font-size: 17px;
   margin-bottom: 8%;
+  padding-right: 0%;
 }
 
 .consultation-image {
-  margin-bottom: 32px;
+  margin-bottom: 4%;
   width: 100%;
 }
 
 
-   /*////////// Philosophy & Principles //////////*/
+/*////////// Philosophy & Principles //////////*/
 
    .philosophy-container {
     margin-top: 8%;
@@ -369,6 +372,47 @@
     padding-left: 8px;
     padding-right: 8px;
   }
+
+
+
+   /*////////// Pregnancy //////////*/
+  .pregnancy {
+    margin-top: 0px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    flex-direction: column-reverse;
+  }
+  
+  .pregnancy-content {
+    flex: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .pregnancy-content .section-title {
+    font-size: 23px;
+    margin-bottom: 8%;
+  }
+  
+  .pregnancy-content .section-heading {
+    margin-bottom: 8%;
+  }
+  
+  .pregnancy-content .section-text {
+    font-size: 17px;
+    margin-bottom: 8%;
+    padding-right: 0%;
+  }
+  
+  .pregnancy-image {
+    margin-bottom: 4%;
+    width: 100%;
+  }
+
+  .pregnancy img {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
 
 
 
