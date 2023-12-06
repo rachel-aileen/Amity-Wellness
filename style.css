@@ -106,7 +106,7 @@ header .navigation .menu{
   margin: 20px;
   padding: 25px 16px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
   transition: color 1s;
 }
 
@@ -207,7 +207,7 @@ header.sticky .menu-item .sub-menu{
   height: 100vh;
   overflow: hidden;
   background-size: cover;
-  background: url(/images/hero-img.png) no-repeat center center / cover; /* Adjust shadow color and opacity */
+  background: url(/images/hero-img.png) no-repeat center center / cover; 
 }
 
 .hero-text {
@@ -303,7 +303,7 @@ header.sticky .menu-item .sub-menu{
 .heading .section-heading {
   font-size: 14px;
   color: var(--secondary-color);
-  margin-bottom: 24px;
+  margin-bottom: 4%;
   position: relative;
   text-transform: uppercase;
   font-family: var(--button-font);
@@ -452,8 +452,8 @@ header.sticky .menu-item .sub-menu{
 
 .custom-icon {
   fill: var(--secondary-color);
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 8%;
+  margin-bottom: 8%;
   align-self: center;
 }
 
@@ -804,6 +804,75 @@ header.sticky .menu-item .sub-menu{
   padding-right: 25%;
   line-height: 1.8;
 }
+
+
+/* ////////// Begin Journey ////////// */
+.begin-journey-container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.row.begin-journey {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card.begin-journey {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
+  background: transparent;
+  padding: 20px 20px;
+  align-self: normal;
+  width: 20%;
+  margin-bottom: 36px;
+}
+
+.card.begin-journey-line {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  margin-right: 16px;
+  margin-left: 16px;
+  background: transparent;
+  padding: 20px 20px;
+  align-self: normal;
+  width: 20%;
+  margin-bottom: 36px;
+  border-right: 1px solid var(--section-bg);
+  border-left: 1px solid var(--section-bg);
+}
+
+
+.card-title {
+  font-size: 24px;
+  color: var(--tertiary-text-color) !important;
+  font-family: var(--primary-font);
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 17px;
+  font-family: var(--secondary-font);
+  line-height: 1.8;
+  color: var(--text-color)!important;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 
 
 

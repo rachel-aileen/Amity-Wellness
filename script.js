@@ -4,15 +4,6 @@ window.addEventListener('scroll', function() {
   header.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// SUBMENU SCROLL
-window.addEventListener('scroll', function() {
-    var submenu = document.querySelector('.sub-menu');
-    if (window.scrollY > 0) {
-        submenu.style.backgroundColor = '#FFFEFC';  
-    } else {
-        submenu.style.backgroundColor = 'transparent';
-    }
-});
 
 
 // SCROLL REVEAL (FADE IN)

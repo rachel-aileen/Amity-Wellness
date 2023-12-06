@@ -229,7 +229,7 @@
 
  
 
-   /*////////// Services //////////*/
+/*////////// Services //////////*/
 
    .services-container {
     margin-top: 56px;
@@ -412,6 +412,53 @@
     padding-left: 4%;
     padding-right: 4%;
   }
+
+
+/*////////// Begin Journey //////////*/
+
+    .begin-journey-container {
+      margin-top: 56px;
+      max-width: 90%;
+    }
+  
+    .row.begin-journey {
+      justify-content: space-evenly;
+    }
+  
+    .card.begin-journey {
+      margin-right: 16px;
+      margin-left: 16px;
+      padding: 24px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .card.begin-journey-line {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: center;
+      margin-right: 16px;
+      margin-left: 16px;
+      padding: 20px 20px;
+      align-self: normal;
+      width: 20%;
+      margin-bottom: 36px;
+      border-right: 0px;
+      border-left: 0px;
+    }
+  
+    .custom-icon {
+      margin-top: 2%;
+      margin-bottom: 8%;
+    }
+  
+    .card-text {
+      margin-bottom: 20px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  
 
 
 
