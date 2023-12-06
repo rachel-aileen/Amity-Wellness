@@ -460,10 +460,7 @@
     }
   
 
-
-
-
-   /* ////////// BOOK APPOINTMENT ////////// */
+   /* ////////// Schedule Appointment ////////// */
    .wrap {
     margin-right: 16px;
     margin-left: 16px;
@@ -471,11 +468,14 @@
   }
 
   .appointment-title {
-    padding: 8px;
+    padding: 4%;
   }
 
   .appointment-content {
     height: 25vh;
+    margin-top: 6%;
+    padding-top: 2%;
+  padding-bottom: 2%;
   }
 
   .appointment-content {
