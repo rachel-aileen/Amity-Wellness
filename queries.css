@@ -2,16 +2,23 @@
 
   :root {
     /* Font Sizes & Family */
+    --primary-font: 'Canela Text Trial', sans-serif;
+    --secondary-font: 'HK Grotesk', sans-serif;  
+    --button-font: "Sweet Sans Pro, Bold";
+    --button-font-light: 'Sweet Sans Pro', serif;
   
-    --body-font: "Sofia Pro", sans-serif;
   
     /* Color Variables */
     --primary-color: #DB9BB7;
     --primary-color-hover: #92749E;
-    --text-color: #2F4858;
+    --secondary-color: #B09BB9;
+    --tertiary-color: #FFF5FC;
+    --text-color: #435A68;
     --text-color-light: #F1E8F4;
+    --secondary-text-color: #75858F;
+    --tertiary-text-color: #667A86;
     --border-color: #E0B2C6;
-    --white-color: white;
+    --white-color: #FFFEFC;
     --section-bg: #F0E3E9;
   
     /* transition */
@@ -29,7 +36,7 @@
     header .navigation .menu{
       position: fixed;
       display: block;
-      background: var(--section-bg);
+      background: var(--tertiary-color);
       min-width: 100%;
       height: 100vh;
       top: 0;
@@ -59,60 +66,6 @@
       position: relative;
     }
   
-    .menu-item .sub-menu{
-      opacity: 1;
-      position: relative;
-      top: 0;
-      transform: translateX(10px);
-      background: transparent;
-      border-radius: 5px;
-      overflow: hidden;
-      display: none;
-      margin-left: 12px;
-    }
-  
-    header.sticky .menu-item .sub-menu{
-      top: 0;
-    }
-  
-    .menu-item:hover .sub-menu{
-      transform: translateX(10px);
-    }
-  
-    .menu-item .sub-menu .sub-item{
-      box-shadow: none;
-    }
-  
-    .menu-item .sub-menu .sub-item:hover{
-      background: none;
-    }
-  
-    .menu-item .sub-menu .sub-item a:hover{
-      color: var(--primary-color);
-      transition: 0.3s;
-    }
-  
-    .more .more-menu{
-      opacity: 1;
-      position: relative;
-      left: 0;
-      transform: translateY(0);
-      background: white;
-      border-radius: 5px;
-      display: none;
-    }
-  
-    .more .more-menu .more-item{
-      box-shadow: none;
-    }
-  
-    .more .more-menu .more-item:hover{
-      background: none;
-    }
-  
-    .more .more-menu .more-item a{
-      margin-left: 20px;
-    }
   
     .close-btn{
       position: absolute;
