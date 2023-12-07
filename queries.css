@@ -434,14 +434,9 @@
     }
 
     .card.begin-journey-line {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      align-items: center;
       margin-right: 16px;
       margin-left: 16px;
       padding: 20px 20px;
-      align-self: normal;
       width: 20%;
       margin-bottom: 36px;
       border-right: 0px;
@@ -490,9 +485,7 @@
   .cta-button {
     padding: 20px 32px;
  
-  
   }
-  
   
   }
         
