@@ -79,25 +79,6 @@ html, body {
   }
   
   
-  .hero-button {
-    background-color: #A68EAF;
-    border: none;
-    color: white;
-    font-size: 14px;
-    font-family: var(--button-font);
-    padding: 20px 32px;
-    text-transform: uppercase;
-    transition: background-color 1s;
-    letter-spacing: 4px;
-    cursor: grab;
-    font-weight: 500;
-  
-  }
-  
-  .hero-button:hover {
-    background-color: var(--primary-color-hover);
-    color: white;
-  }
   
   .cta-button {
     background-color: var(--primary-color-hover);
@@ -119,21 +100,61 @@ html, body {
 
 
   /* ////////// Team Photos ////////// */
+
+
+.team-section1 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    margin: auto; 
+    background-color: var(--tertiary-color);
+    padding-top: 6%;
+    padding-bottom: 0%;
+}
+
+.team-section2 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    margin: auto; 
+    background-color: var(--tertiary-color);
+    padding-top: 6%;
+    padding-bottom: 0%;
+}
+
+.team-section3 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    margin: auto; 
+    background-color: var(--tertiary-color);
+    padding-top: 6%;
+    padding-bottom: 15%;
+}
+
   .row.team {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 0px;
+    width: 90%; 
+  
   }
   
-  /* Create four equal columns that sits next to each other */
   .column.team {
     flex: 33%;
     max-width: 33%;
-    padding: 0 4px;
+    padding: 0 0px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   
   .column.team img {
-    margin-top: 8px;
+    margin-top: 0%;
     vertical-align: middle;
-    width: 100%;
+    width: 85%;
+    padding-top: 8%;
   }

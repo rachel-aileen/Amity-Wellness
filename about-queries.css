@@ -53,4 +53,12 @@
       
       }
 
+/* ////////// Team Photos ////////// */
+
+
+.column.team {
+    flex: 100%; /* Each column takes full width */
+    max-width: 100%; /* Each column takes full width */
+  }
+
     }
