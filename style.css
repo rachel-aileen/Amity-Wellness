@@ -72,7 +72,7 @@ header.scrolled {
 }
 
 .logo{
-  width: 12em !important;
+  width: 11.5em !important;
   margin-left: 96px;
 }
 
@@ -100,7 +100,7 @@ header .navigation .menu{
 .menu-item > a{
   color: var(--secondary-text-color);
   font-family: var(--button-font-light);                                
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   text-decoration: none;
   margin: 20px;
