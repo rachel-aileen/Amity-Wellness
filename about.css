@@ -100,7 +100,9 @@ html, body {
 
 
   /* ////////// Team Photos ////////// */
-
+.team-container {
+    margin-bottom: 20%;
+}
 
 .team-section1 {
     display: flex; 
