@@ -40,6 +40,7 @@ html, body {
     --secondary-color: #B09BB9;
     --tertiary-color: #FFF5FC;
     --text-color: #435A68;
+    --text-color-dark: #787D98;
     --text-color-light: #F1E8F4;
     --secondary-text-color: #75858F;
     --tertiary-text-color: #667A86;
@@ -81,8 +82,7 @@ html, body {
   }
   
   
-  
-  .cta-button {
+.cta-button {
     background-color: var(--primary-color-hover);
     border: none;
     color: white;
@@ -96,14 +96,48 @@ html, body {
     font-weight: 500;
   }
   
-  .cta-button:hover {
+.cta-button:hover {
     background-color: var(--primary-color);
   }
 
 
+/* ////////// Intro ////////// */
+.intro-container {
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-content {
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+
+.intro-title{
+    font-size: 40px;
+    font-family: var(--primary-font);
+    color: var(--text-color-dark);
+    font-weight: 100;
+}
+
+.intro-text {
+    font-size: 17px;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    font-weight: 100;
+    line-height: 1.8;
+    padding-top: 2%;
+}
+
+
+
 /* ////////// Team Photos ////////// */
   .team-container {
-    margin-bottom: 20%;
+    margin-bottom: 0%;
 }
 
 .team-section1 {
