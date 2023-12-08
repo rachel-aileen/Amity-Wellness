@@ -104,7 +104,7 @@ html, body {
 /* ////////// Intro ////////// */
 .intro-container {
     display: flex;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     margin: auto;
     justify-content: center;

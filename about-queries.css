@@ -28,7 +28,7 @@
     --tran-0-5: 0.5s;
   }
 
-/* /////// About Section ///////*/
+  /* /////// About Section ///////*/
 
 .about-text {
     text-align: center;
@@ -53,6 +53,40 @@
     font-size: 14px;
       
       }
+
+
+/* ////////// Intro ////////// */
+.intro-container {
+  display: flex;
+  height: 65vh;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-content {
+  padding-left: 4%;
+  padding-right: 4%;
+  
+}
+
+.intro-title{
+  font-size: 32px;
+  font-family: var(--primary-font);
+  color: var(--text-color-dark);
+  font-weight: 100;
+}
+
+.intro-text {
+  font-size: 17px;
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  font-weight: 100;
+  line-height: 1.8;
+  padding-top: 4%;
+}
 
 /* ////////// Team Photos ////////// */
 
