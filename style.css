@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 @font-face{
+  font-family: 'Sweet Sans Pro, Medium';
+  src: url('/sweet-sans-pro-fonts/SweetSansProLight.otf');
+  font-weight: normal;
+}
+
+@font-face{
   font-family: 'Sweet Sans Pro, Bold';
   src: url('/sweet-sans-pro-fonts/SweetSansProBold.otf');
   font-weight: bold;
@@ -30,6 +36,7 @@ html, body {
   --secondary-font: 'HK Grotesk', sans-serif;  
   --button-font: "Sweet Sans Pro, Bold";
   --button-font-light: 'Sweet Sans Pro', serif;
+  --button-font-regular: 'Sweet Sand Pro, Regular';
 
 
   /* Color Variables */
