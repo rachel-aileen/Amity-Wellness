@@ -159,4 +159,5 @@ html, body {
     vertical-align: middle;
     width: 85%;
     padding-top: 8%;
+    cursor: grab;
   }
