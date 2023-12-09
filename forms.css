@@ -83,8 +83,23 @@ margin: 0 auto;
 margin-bottom: 4%;
 }
 
-.content-container input[type="password"], .content-container button[type="submit"] {
-  width: 100%; /* Make inputs and button take full width of the container */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+.content-container input[type="password"] {
+  background-color: #F5F5F5;
+  border: none;
+  color: var(--secondary-text-color);
+  margin-bottom: 2%;
+  padding: 20px 32px; /
 }
+
+
+.content-container input[type="password"], .content-container button[type="submit"] {
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.content-container input[type="password"]:focus {
+  outline: 1px solid var(--secondary-color); /* Set outline to orange when the element is focused */
+}
+
+
 
