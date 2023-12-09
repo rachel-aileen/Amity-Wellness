@@ -60,18 +60,31 @@ html, body {
 }
 
 /* ////////// Forms ///////// */
-
 .forms-container {
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  text-align: center;
+  width: auto; /* Adjust width as needed */
+  margin: auto;
 }
 
 .forms-text {
-  font-size: 17px;
-  font-family: var(--secondary-font);
-  color: var(--text-color);
-  font-weight: 100;
+font-size: 17px;
+font-family: var(--secondary-font);
+color: var(--text-color);
+font-weight: 100;
+margin: 0 auto; 
+margin-bottom: 4%;
 }
+
+.content-container input[type="password"], .content-container button[type="submit"] {
+  width: 100%; /* Make inputs and button take full width of the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+

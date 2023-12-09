@@ -101,12 +101,21 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     
 <!-- Forms -->
 <div class="forms-container">
-    <h5 class="forms-text">Entry to company forms is secured with a password. 
-      Please enter your password for access:
+  <div class="content-container">
+    <h5 class="forms-text">Company forms are password-secured. Please enter your password for access:
     </h5>
-        
-    </div>
+
+    <form action="/your-server-side-script" method="post">
+      <p>
+        <input type="password" name="password" placeholder="Enter Password" required>
+      </p>
+      <p>
+        <button type="submit" class="hero-button" onclick="window.location.reload();">Submit</button>
+      </p>
+    </form>  
+  </div>
 </div>
+
 
 
   </body>
