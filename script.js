@@ -105,8 +105,14 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
 // FORMS PAGE
-document.getElementById('passwordForm').addEventListener('submit', function(event){
-  event.preventDefault(); // Prevents the default form submission behavior
-  window.location.reload(); // Refreshes the page
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('passwordForm').addEventListener('submit', function(event){
+    event.preventDefault(); // Prevents the default form submission behavior
+
+    // Show the error message
+    var errorMessage = document.getElementById('passwordError');
+    errorMessage.style.display = 'inline'; // Make the error message visible
+  });
 });
