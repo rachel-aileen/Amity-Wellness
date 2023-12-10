@@ -104,3 +104,9 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// FORMS PAGE
+document.getElementById('passwordForm').addEventListener('submit', function(event){
+  event.preventDefault(); // Prevents the default form submission behavior
+  window.location.reload(); // Refreshes the page
+});
