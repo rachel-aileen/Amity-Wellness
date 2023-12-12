@@ -43,5 +43,30 @@
     padding-bottom: 24px;
     font-size: 40px;
       }
+
+.fees-container {
+    height: 70vh;
+}
+
+.fees-container .intro-section {
+    font-family: var(--primary-font);
+    font-size: 32px;
+    font-weight: 100;
+    margin-top: 4%;
+    color: var(--tertiary-text-color);
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.fees-container .intro-text {
+    margin-top: 4%;
+    font-size: 17px;
+    font-family: var(--secondary-font);
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    padding-right: 4%;
+    padding-left: 4%;
+    line-height: 1.8;
+}
     
     }

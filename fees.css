@@ -83,16 +83,22 @@ html, body {
 
 /* ////////// Fees Intro ////////// */
 .fees-container {
+    height: 60vh;
     width: 100%;
-    height: 50vh;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    display: flex;
+}
+
+.fees-content {
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .fees-container .intro {
     font-size: 14px;
     font-family: var(--button-font);
-    margin-top: 9%;
     color: var(--secondary-color);
     position: relative;
     text-transform: uppercase;
