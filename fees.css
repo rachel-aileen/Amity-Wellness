@@ -139,12 +139,12 @@ width: 85%;
     margin-top: 0%;
 }
 
-.list-image {
+.list-left {
     flex: 1;
     margin-right: 40px;
 }
 
-.list-image .section-title {
+.list-left .section-title {
     font-size: 28px;
     color: var(--secondary-text-color);
     font-family: var(--primary-font);
@@ -154,7 +154,7 @@ width: 85%;
     padding-top: 15px;
 }
   
-.list-image .section-subtitle {
+.list-left .section-subtitle {
     font-size: 20px;
     margin-bottom: 15px;
     color: #808080;
@@ -164,7 +164,7 @@ width: 85%;
     margin-bottom: 6%;
   }
   
-  .list-image .section-text {
+  .list-left .section-text {
     font-size: 17px;
     line-height: 1.8;
     color: var(--text-color);
@@ -174,13 +174,12 @@ width: 85%;
     margin-bottom: 6%;
   }
   
-
-  .list-content {
+  .list-right {
     flex: 1;
     padding-left: 40px;
   }
   
-  .list-content .section-title {
+  .list-right .section-title {
     font-size: 28px;
     color: var(--secondary-text-color);
     font-family: var(--primary-font);
@@ -190,7 +189,7 @@ width: 85%;
     padding-top: 15px;
   }
   
-  .list-content .section-subtitle {
+  .list-right .section-subtitle {
     font-size: 20px;
     margin-bottom: 15px;
     color: #808080;
@@ -200,7 +199,7 @@ width: 85%;
     margin-bottom: 6%;
   }
   
-  .list-content .section-text {
+  .list-right .section-text {
     font-size: 17px;
     line-height: 1.8;
     color: var(--text-color);
