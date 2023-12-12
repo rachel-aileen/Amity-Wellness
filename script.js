@@ -109,10 +109,10 @@ var swiper = new Swiper(".mySwiper", {
 // FORMS PAGE
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('passwordForm').addEventListener('submit', function(event){
-    event.preventDefault(); // Prevents the default form submission behavior
+    event.preventDefault(); 
 
-    // Show the error message
+
     var errorMessage = document.getElementById('passwordError');
-    errorMessage.style.display = 'inline'; // Make the error message visible
+    errorMessage.style.display = 'inline'; 
   });
 });

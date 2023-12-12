@@ -28,7 +28,7 @@
     --tran-0-5: 0.5s;
   }
 
-  /* /////// About Section ///////*/
+/* /////// About Section ///////*/
 
 .about-text {
     text-align: center;
@@ -52,7 +52,7 @@
     border: none;
     font-size: 14px;
       
-      }
+  }
 
 
 /* ////////// Intro ////////// */
