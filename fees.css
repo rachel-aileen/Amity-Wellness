@@ -54,7 +54,7 @@ html, body {
     --tran-0-5: 0.5s;
   }
 
-/* ////////// About Section ////////// */
+/* ////////// Fees Header ////////// */
 .fees-image {
     position: relative;
     height: 70vh;
@@ -80,22 +80,43 @@ html, body {
     font-weight: 100;
     color: var(--white-color);
   }
-  
-  
-.cta-button {
-    background-color: var(--primary-color-hover);
-    border: none;
-    color: white;
+
+/* ////////// Fees Intro ////////// */
+.fees-container {
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.fees-container .intro {
     font-size: 14px;
-    font-family: "Sofia Pro", sans-serif;
-    padding: 20px 32px;
+    font-family: var(--button-font);
+    margin-top: 9%;
+    color: var(--secondary-color);
+    position: relative;
     text-transform: uppercase;
-    transition: background-color 1s;
-    letter-spacing: 2px;
-    cursor: grab;
-    font-weight: 500;
-  }
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.fees-container .intro-section {
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 2%;
+    color: var(--tertiary-text-color);
+}
+
+.fees-container .intro-text {
+    margin-top: 2%;
+    font-size: 17px;
+    font-family: var(--secondary-font);
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    padding-right: 20%;
+    padding-left: 20%;
+    line-height: 1.8;
+}
   
-.cta-button:hover {
-    background-color: var(--primary-color);
-  }
+  
