@@ -70,5 +70,28 @@
     padding-left: 4%;
     line-height: 1.8;
 }
+
+/* /////////// Fees List ////////// */
+
+.list-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.list-overview {
+    padding: 20px;
+    flex-direction: column;
+}
+
+.list-image {
+    margin-right: 0px;
+    margin-bottom: 4%;
+}
+
+.list-content {
+    padding: 0px;
+    font-size: 16px;
+}
     
     }
