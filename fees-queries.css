@@ -29,7 +29,7 @@
       }
 
 
-/* /////// Fees ///////*/
+/* /////// Fees Header ///////*/
 
 .fees-text {
     text-align: center;
@@ -43,6 +43,8 @@
     padding-bottom: 24px;
     font-size: 40px;
       }
+
+/* /////// Fees Intro ///////*/
 
 .fees-container {
     height: 70vh;
