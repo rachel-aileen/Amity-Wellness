@@ -85,8 +85,9 @@
 }
 
 .list-left {
-    margin-right: 0px;
+    margin-right: 0px !important;
     margin-bottom: 4%;
+    flex: 1;
 }
 
 .list-left .section-text {
@@ -101,8 +102,10 @@
   }
 
 .list-right {
-    padding: 0px;
+    padding-left: 0px;
     font-size: 16px;
+    text-align: left;
+    width: 100%;
 }
     
     }

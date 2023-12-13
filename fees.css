@@ -140,8 +140,7 @@ width: 85%;
 }
 
 .list-left {
-    flex: 1.5;
-    margin-right: 40px;
+    flex: 1;
 }
 
 .list-left .section-title {
@@ -177,7 +176,6 @@ width: 85%;
   
   .list-right {
     flex: 1;
-    padding-left: 40px;
   }
   
   .list-right .section-title {
