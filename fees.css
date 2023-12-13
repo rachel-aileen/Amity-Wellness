@@ -128,7 +128,10 @@ html, body {
 /* ////////// List Container /////////// */
 .list-container {
 width: 85%;
-  margin: 0 auto;
+margin: 0 auto;
+border-bottom: 0.5px solid var(--secondary-text-color);
+padding-bottom: 4%;
+padding-top: 4%;
 }
 
 .list-overview {
@@ -140,15 +143,15 @@ width: 85%;
 }
 
 .list-left {
-    flex: 1;
+    flex: 1.8;
 }
 
 .list-left .section-title {
     font-size: 24px;
-    color: var(--secondary-color);
+    color: var(--text-color-dark);
     font-family: var(--primary-font);
     letter-spacing: 0.5px;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 4%;
     padding-top: 15px;
 }
@@ -156,7 +159,7 @@ width: 85%;
 .list-left .section-price {
     font-size: 17px;
     margin-bottom: 15px;
-    color: var(--secondary-text-color);
+    color: var(--secondary-color);
     font-family: var(--secondary-font);
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -171,7 +174,7 @@ width: 85%;
     letter-spacing: 0.5px;
     font-weight: 300;
     margin-bottom: 4%;
-    padding-right: 15%;
+    padding-right: 24%;
   }
   
   .list-right {

@@ -74,9 +74,10 @@
 /* /////////// Fees List ////////// */
 
 .list-container{
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
-    padding: 0px;
+    padding-bottom: 6%;
+    padding-top: 6%;
 }
 
 .list-overview {
@@ -106,6 +107,7 @@
     font-size: 16px;
     text-align: left;
     width: 100%;
+    flex: 1;
 }
     
     }
