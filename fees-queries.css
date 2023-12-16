@@ -109,5 +109,43 @@
     width: 100%;
     flex: 1;
 }
+
+   /*////////// Insurance //////////*/
+   .insurance {
+    margin-top: 0px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    flex-direction: column-reverse;
+  }
+  
+  .insurance-content {
+    flex: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .insurance-content .section-title {
+    font-size: 23px;
+    margin-bottom: 8%;
+  }
+  
+  .insurance-content .section-heading {
+    margin-bottom: 8%;
+  }
+  
+  .insurance-content .section-text {
+    font-size: 17px;
+    margin-bottom: 8%;
+    padding-right: 0%;
+  }
+  
+  .insurance-image {
+    margin-bottom: 4%;
+    width: 100%;
+  }
+
+  .insurance img {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
     
     }

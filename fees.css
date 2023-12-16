@@ -227,5 +227,79 @@ padding-top: 4%;
     font-family: var(--secondary-font);
     font-size: 17px;
 }
+
+/* ////////// Insurance /////// */
+
+.insurance-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--text-color-light);
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin-top: 5%;
+}
+
+.insurance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.insurance-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.insurance img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding-left: 0%;
+  padding-right: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.insurance .section-heading {
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-bottom: 24px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: var(--button-font);
+    letter-spacing: 0.5px;
+    margin-top: 9%;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.insurance-content {
+  flex: 1;
+  padding-left: 10%;
+}
+
+.insurance-content .section-title {
+  font-size: 28px;
+  color: var(--secondary-text-color);
+  font-family: var(--primary-font);
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  padding-top: 15px;
+  margin-bottom: 6%;
+}
+
+
+.insurance-content .section-text {
+  font-size: 17px;
+  color: var(--text-color);
+  position: relative;
+  font-family: var(--secondary-font);
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  margin-bottom: 6%;
+  padding-right: 25%;
+  line-height: 1.8;
+}
   
   
