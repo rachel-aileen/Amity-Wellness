@@ -129,9 +129,12 @@ html, body {
 .list-container {
 width: 85%;
 margin: 0 auto;
-border-bottom: 0.5px solid var(--secondary-text-color);
 padding-bottom: 4%;
 padding-top: 4%;
+}
+
+.list-container:nth-child(-n+9) {
+  border-bottom: 0.5px solid var(--secondary-text-color);
 }
 
 .list-overview {
