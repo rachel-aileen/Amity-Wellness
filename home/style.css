@@ -531,7 +531,7 @@ header .navigation .menu{
 .philosophy-container {
   max-width: 100%;
   margin: 0 auto;
-  background-image: url(images/pink-sunset-img.png);
+  background-image: url(/images/pink-sunset-img.png);
   background-size: cover;
   margin-top: 8%;
   padding-bottom: 6%;

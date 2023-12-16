@@ -70,7 +70,7 @@
   
     .close-btn{
       position: absolute;
-      background: url(close.png)no-repeat;
+      background: url(/close.png)no-repeat;
       width: 40px;
       height: 40px;
       background-size: 40px;
@@ -82,7 +82,7 @@
     }
   
     .menu-btn{
-      background: url(menu.png)no-repeat;
+      background: url(/menu.png)no-repeat;
       width: 40px;
       height: 40px;
       background-size: 40px;
