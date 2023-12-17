@@ -83,20 +83,21 @@ html, body {
   
   
 
-  /* ////////// Contact Section ////////// */
+/* ////////// Contact Section ////////// */
 
 .contact-container {
     width: 85%;
     margin: 0 auto;
     padding-bottom: 4%;
     padding-top: 4%;
+
     }
     
-    .contact-container:nth-child(-n+9) {
+.contact-container:nth-child(-n+9) {
       border-bottom: 0.5px solid var(--secondary-text-color);
     }
     
-    .contact-overview {
+.contact-overview {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -104,11 +105,12 @@ html, body {
         margin-top: 0%;
     }
     
-    .contact-left {
-        flex: 1.8;
+.contact-left {
+        flex: 1;
+       
     }
     
-    .contact-left .section-title {
+.contact-left .section-title {
         font-size: 24px;
         color: var(--text-color-dark);
         font-family: var(--primary-font);
@@ -118,7 +120,7 @@ html, body {
         padding-top: 15px;
     }
       
-    .contact-left .section-price {
+.contact-left .section-price {
         font-size: 17px;
         margin-bottom: 15px;
         color: var(--secondary-color);
@@ -128,7 +130,7 @@ html, body {
         margin-bottom: 4%;
       }
       
-      .contact-left .section-text {
+.contact-left .section-text {
         font-size: 17px;
         line-height: 1.8;
         color: var(--text-color);
@@ -136,14 +138,16 @@ html, body {
         letter-spacing: 0.5px;
         font-weight: 300;
         margin-bottom: 4%;
-        padding-right: 24%;
+        padding-right: 2%;
       }
       
-      .contact-right {
-        flex: 1;
+.contact-right {
+        flex: 1.7;
+        margin-left: 15%;
+    
       }
       
-      .contact-right .section-title {
+.contact-right .section-title {
         font-size: 14px;
         color: var(--secondary-text-color);
         font-family: var(--button-font);
@@ -155,7 +159,7 @@ html, body {
         letter-spacing: 4px;
       }
       
-      .contact-right .section-price {
+.contact-right .section-price {
         font-size: 17px;
         margin-bottom: 15px;
         color: var(--secondary-text-color);
@@ -165,7 +169,7 @@ html, body {
         margin-bottom: 4%;
       }
       
-      .contact-right .section-text {
+.contact-right .section-text {
         font-size: 17px;
         line-height: 1.8;
         color: var(--text-color);
@@ -175,11 +179,11 @@ html, body {
         margin-bottom: 2%;
       }
     
-      .contact-right ul {
+.contact-right ul {
         padding-left: 3%;
       }
     
-    .contact-item {
+.contact-item {
         color: var(--text-color);
         line-height: 1.8;
         font-weight: 100;
