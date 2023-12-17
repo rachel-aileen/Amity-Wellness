@@ -54,7 +54,7 @@ html, body {
     --tran-0-5: 0.5s;
   }
 
-/* ////////// About Section ////////// */
+/* ////////// Contact Image ////////// */
 .contact-image {
     position: relative;
     height: 70vh;
@@ -82,20 +82,107 @@ html, body {
   }
   
   
-.cta-button {
-    background-color: var(--primary-color-hover);
-    border: none;
-    color: white;
-    font-size: 14px;
-    font-family: "Sofia Pro", sans-serif;
-    padding: 20px 32px;
-    text-transform: uppercase;
-    transition: background-color 1s;
-    letter-spacing: 2px;
-    cursor: grab;
-    font-weight: 500;
-  }
-  
-.cta-button:hover {
-    background-color: var(--primary-color);
-  }
+
+  /* ////////// Contact Section ////////// */
+
+.contact-container {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    }
+    
+    .contact-container:nth-child(-n+9) {
+      border-bottom: 0.5px solid var(--secondary-text-color);
+    }
+    
+    .contact-overview {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 0%;
+    }
+    
+    .contact-left {
+        flex: 1.8;
+    }
+    
+    .contact-left .section-title {
+        font-size: 24px;
+        color: var(--text-color-dark);
+        font-family: var(--primary-font);
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        margin-bottom: 4%;
+        padding-top: 15px;
+    }
+      
+    .contact-left .section-price {
+        font-size: 17px;
+        margin-bottom: 15px;
+        color: var(--secondary-color);
+        font-family: var(--secondary-font);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-bottom: 4%;
+      }
+      
+      .contact-left .section-text {
+        font-size: 17px;
+        line-height: 1.8;
+        color: var(--text-color);
+        font-family: var(--secondary-font);
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        margin-bottom: 4%;
+        padding-right: 24%;
+      }
+      
+      .contact-right {
+        flex: 1;
+      }
+      
+      .contact-right .section-title {
+        font-size: 14px;
+        color: var(--secondary-text-color);
+        font-family: var(--button-font);
+        letter-spacing: 0.5px;
+        font-weight: 100;
+        margin-bottom: 4%;
+        padding-top: 15px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+      
+      .contact-right .section-price {
+        font-size: 17px;
+        margin-bottom: 15px;
+        color: var(--secondary-text-color);
+        font-family: var(--secondary-font);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-bottom: 4%;
+      }
+      
+      .contact-right .section-text {
+        font-size: 17px;
+        line-height: 1.8;
+        color: var(--text-color);
+        font-family: var(--secondary-font);
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        margin-bottom: 2%;
+      }
+    
+      .contact-right ul {
+        padding-left: 3%;
+      }
+    
+    .contact-item {
+        color: var(--text-color);
+        line-height: 1.8;
+        font-weight: 100;
+        font-family: var(--secondary-font);
+        font-size: 17px;
+    }
