@@ -84,32 +84,32 @@ html, body {
   
 /* ////////// Column Test ////////// */
 .test-container {
-    width: 100%; /* Full width of the container */
+    width: 100%;
     display: flex;
     height: 100vh;
 }
 
 .row .test {
-    width: 50%; /* Each row takes up half of the width */
+    width: 50%;
 }
 
 .row-text-1 {
     padding-left: 20%;
-    padding-right: 10%;
+    padding-right: 15%;
 }
 
 .row-text-2 {
-    padding-left: 20%;
+    padding-left: 15%;
     padding-right: 10%;
 }
 
 #row1 {
-    background-color: green; /* Background color for the first row */
+    background-color: pink; 
     flex: 1;
 }
 
 #row2 {
-    background-color: purple; /* Background color for the second row */
+    background-color: yellow;
     flex: 2;
 }
 
