@@ -86,13 +86,21 @@ html, body {
 .test-container {
     width: 100%; /* Full width of the container */
     display: flex;
-    height: 50vh;
+    height: 100vh;
 }
 
 .row .test {
     width: 50%; /* Each row takes up half of the width */
-    margin: 0 auto; /* Center the rows */
-    
+}
+
+.row-text-1 {
+    padding-left: 20%;
+    padding-right: 10%;
+}
+
+.row-text-2 {
+    padding-left: 20%;
+    padding-right: 10%;
 }
 
 #row1 {
@@ -102,7 +110,7 @@ html, body {
 
 #row2 {
     background-color: purple; /* Background color for the second row */
-    flex: 1;
+    flex: 2;
 }
 
 
