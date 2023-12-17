@@ -82,6 +82,29 @@ html, body {
   }
   
   
+/* ////////// Column Test ////////// */
+.test-container {
+    width: 100%; /* Full width of the container */
+    display: flex;
+    height: 50vh;
+}
+
+.row .test {
+    width: 50%; /* Each row takes up half of the width */
+    margin: 0 auto; /* Center the rows */
+    
+}
+
+#row1 {
+    background-color: green; /* Background color for the first row */
+    flex: 1;
+}
+
+#row2 {
+    background-color: purple; /* Background color for the second row */
+    flex: 1;
+}
+
 
 /* ////////// Contact Section ////////// */
 
