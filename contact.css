@@ -86,147 +86,58 @@ html, body {
 .test-container {
   width: 100%;
   display: flex;
-  height: 80vh;
+  height: auto; /* Adjusted to auto */
 }
 
-.row.test { 
-  width: 50%;
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
+.row-content {
+  margin-left: 12%;
+  margin-left: 10%;
 }
 
-.row-text-1, .row-text-2 {
-  text-align: left; 
+.row.test1 { 
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+
 }
 
-.row-text-1 {
-  padding-left: 20%;
+.row.test2 { 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns items to the start of the container */
+}
+
+.left-row-title {
+  padding-left: 0%;
   padding-right: 15%;
+  font-size: 14px;
+  color: var(--secondary-color);
+  position: relative;
+  text-transform: uppercase;
+  font-family: var(--button-font);
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-top: 2%; /* Reduced margin-top */
 }
 
-.row-text-2 {
-  padding-left: 15%;
-  padding-right: 10%;
+.left-row-text {
+  font-size: 17px;
+  margin-top: 4%; /* Reduced or adjusted margin-top */
+  font-weight: 100;
+  font-family: var(--secondary-font);
+  color: var(--text-color);
 }
 
 #row1 {
-  background-color: pink;
-  flex: 1;
+  background-color: var(--tertiary-color);
 }
 
 #row2 {
-  background-color: yellow;
-  flex: 2;
+  background-color: aqua;
 }
 
 
 
-/* ////////// Contact Section ////////// */
-
-.contact-container {
-    width: 85%;
-    margin: 0 auto;
-    padding-bottom: 4%;
-    padding-top: 4%;
-
-    }
-    
-.contact-container:nth-child(-n+9) {
-      border-bottom: 0.5px solid var(--secondary-text-color);
-    }
-    
-.contact-overview {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 0%;
-    }
-    
-.contact-left {
-        flex: 1;
-       
-    }
-    
-.contact-left .section-title {
-        font-size: 24px;
-        color: var(--text-color-dark);
-        font-family: var(--primary-font);
-        letter-spacing: 0.5px;
-        font-weight: 300;
-        margin-bottom: 4%;
-        padding-top: 15px;
-    }
-      
-.contact-left .section-price {
-        font-size: 17px;
-        margin-bottom: 15px;
-        color: var(--secondary-color);
-        font-family: var(--secondary-font);
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        margin-bottom: 4%;
-      }
-      
-.contact-left .section-text {
-        font-size: 17px;
-        line-height: 1.8;
-        color: var(--text-color);
-        font-family: var(--secondary-font);
-        letter-spacing: 0.5px;
-        font-weight: 300;
-        margin-bottom: 4%;
-        padding-right: 2%;
-      }
-      
-.contact-right {
-        flex: 1.7;
-        margin-left: 15%;
-    
-      }
-      
-.contact-right .section-title {
-        font-size: 14px;
-        color: var(--secondary-text-color);
-        font-family: var(--button-font);
-        letter-spacing: 0.5px;
-        font-weight: 100;
-        margin-bottom: 4%;
-        padding-top: 15px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-      }
-      
-.contact-right .section-price {
-        font-size: 17px;
-        margin-bottom: 15px;
-        color: var(--secondary-text-color);
-        font-family: var(--secondary-font);
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        margin-bottom: 4%;
-      }
-      
-.contact-right .section-text {
-        font-size: 17px;
-        line-height: 1.8;
-        color: var(--text-color);
-        font-family: var(--secondary-font);
-        letter-spacing: 0.5px;
-        font-weight: 300;
-        margin-bottom: 2%;
-      }
-    
-.contact-right ul {
-        padding-left: 3%;
-      }
-    
-.contact-item {
-        color: var(--text-color);
-        line-height: 1.8;
-        font-weight: 100;
-        font-family: var(--secondary-font);
-        font-size: 17px;
-    }
