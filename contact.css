@@ -154,6 +154,7 @@ html, body {
   font-family: var(--primary-font);
   font-weight: 100;
    color: var(--text-color-dark);
+   padding-bottom: 8%;
 }
 
 #row2 {
@@ -165,12 +166,21 @@ html, body {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 50px; 
 }
 
 .form-row {
   display: flex;
   justify-content: space-between;
+}
+
+.form-row > input {
+  flex: 1;
+  background: transparent;
+  border: none; 
+  border-bottom: 1px solid #ccc; 
+  padding: 8px 0; /* Adjust padding to align with the bottom border */
+  margin: 0 5px; /* Add a small margin for spacing */
 }
 
 .form-row,
@@ -186,7 +196,7 @@ form {
 }
 
 .form-row > input:first-child {
-  margin-right: 2%;
+  margin-right: 4%;
 }
 
 
@@ -198,6 +208,14 @@ form {
 .form-row > input:last-child {
   margin-right: 0;
   margin-left: 0px; /* Only left margin for the last input */
+}
+
+.form-row > input::placeholder,
+.form-full-width > textarea::placeholder {
+  font-family: var(--secondary-font);
+  color: var(--secondary-text-color);
+  opacity: 1; 
+  font-size: 14px;
 }
 
 
