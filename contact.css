@@ -83,11 +83,18 @@ html, body {
   
   
 /* ////////// Rows Test ////////// */
-.test-container {
+.contact-row-container {
   width: 100%;
   display: flex;
   height: auto; /* Adjusted to auto */
   flex-direction: row;
+}
+
+.row.left-row { 
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .row-content1 {
@@ -97,14 +104,6 @@ html, body {
   padding-bottom: 20%;
 }
 
-.row.test1 { 
-  flex:1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-
-}
 
 .left-row-title {
   padding-left: 0%;
@@ -123,9 +122,9 @@ html, body {
   font-size: 17px;
   padding-top: 8%;
   padding-bottom: 8%;
-  font-weight: 100;
+  font-weight: 400;
   font-family: var(--secondary-font);
-  color: var(--text-color);
+  color: var(--secondary-text-color);
   line-height: 1.8;
 }
 

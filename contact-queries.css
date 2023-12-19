@@ -55,8 +55,12 @@
     }
 
 /* ////////// Rows Test ////////// */
-.test-container {
+.contact-row-container {
     flex-direction: column;
+  }
+
+  .row.left-row { 
+    width: 100%;
   }
 
   .row-content1 {
@@ -66,9 +70,6 @@
     padding-bottom: 10%;
   }
   
-  .row.test1 { 
-    width: 100%;
-  }
 
   .left-row-text {
     padding-top: 4%;
