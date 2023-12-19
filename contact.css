@@ -185,14 +185,14 @@ form {
   font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 400;
-  transition: border-color 1s, color 1s; /* Smooth transition for border-color and text color */
+  transition: border-color var(--tran-0-3), color var(--tran-0-3); /* Smooth transition for border-color and text color */
 
   
 }
 
 .form-row > input:focus {
   outline: none; 
-  border-bottom: 1.2px solid var(--secondary-color); /* Changes the underline to purple */
+  border-bottom: 1.2px solid var(--secondary-color) !important; /* Changes the underline to purple */
 }
 
 .form-row,
@@ -257,7 +257,6 @@ textarea:focus {
   border-bottom: 1.2px solid var(--secondary-color); /* For input fields */
   border: 1.2px solid var(--secondary-color); /* For textarea */
 }
-
 
 
 
