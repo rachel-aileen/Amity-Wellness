@@ -178,14 +178,21 @@ form {
   flex: 1;
   background: transparent;
   border: none; 
-  border-bottom: 1px solid #ccc; 
-  padding: 8px 0; /* Adjust padding to align with the bottom border */
-  margin: 0 5px; /* Add a small margin for spacing */
+  border-bottom: 1.2px solid #ccc; 
+  padding: 8px 0; 
+  margin: 0 5px; 
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  font-size: 17px;
+  font-weight: 400;
+  transition: border-color 1s, color 1s; /* Smooth transition for border-color and text color */
+
+  
 }
 
 .form-row > input:focus {
   outline: none; 
-  border-bottom: 2px solid var(--secondary-color); /* Changes the underline to purple */
+  border-bottom: 1.2px solid var(--secondary-color); /* Changes the underline to purple */
 }
 
 .form-row,
@@ -230,6 +237,10 @@ textarea {
   border: 1px solid #ccc; 
   height: 10rem;
   resize: vertical;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  font-size: 17px;
+  font-weight: 400;
 }
 
 textarea:focus {
