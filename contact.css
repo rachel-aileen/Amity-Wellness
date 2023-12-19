@@ -146,7 +146,7 @@ html, body {
   margin-right: 10%;
   padding-top: 10%;
   padding-bottom: 20%;
-  width: 75%;
+  width: 70%;
 }
 
 .right-row-title {
@@ -168,6 +168,11 @@ form {
   gap: 10px; 
 }
 
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .form-row,
 .form-full-width {
   display: flex;
@@ -180,14 +185,21 @@ form {
   margin: 0 0px; 
 }
 
-.form-row > input:first-child,
+.form-row > input:first-child {
+  margin-right: 2%;
+}
+
+
 .form-full-width > textarea {
   margin-left: 0;
+  margin-right: 0px;
 }
 
 .form-row > input:last-child {
   margin-right: 0;
+  margin-left: 0px; /* Only left margin for the last input */
 }
+
 
 textarea {
   width: calc(100% - 10px); 
