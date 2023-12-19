@@ -165,7 +165,7 @@ html, body {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Adjust the space between form elements */
+  gap: 10px; 
 }
 
 .form-row,
@@ -176,8 +176,8 @@ form {
 
 .form-row > input,
 .form-full-width > textarea {
-  flex: 1 ; /* Each input and the textarea take equal width in a row */
-  margin: 0 0px; /* Adjust margin for spacing, if needed */
+  flex: 1 ; 
+  margin: 0 0px; 
 }
 
 .form-row > input:first-child,
@@ -190,23 +190,23 @@ form {
 }
 
 textarea {
-  width: calc(100% - 10px); /* Adjust width to match the inputs above */
-  padding: 8px; /* Adjust for padding */
-  border: 1px solid #ccc; /* Border style, change as needed */
-  height: 100px; /* Adjust height as needed */
-  resize: vertical; /* Allows the user to resize vertically */
+  width: calc(100% - 10px); 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  height: 100px; 
+  resize: vertical;
 }
 
 button[type="submit"] {
-  padding: 10px 20px; /* Adjust button padding */
-  background-color: #4CAF50; /* Change button color as needed */
-  color: white; /* Change text color as needed */
+  padding: 10px 20px; 
+  background-color: #4CAF50;
+  color: white; 
   border: none;
   cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049; /* Hover effect for button */
+  background-color: #45a049; 
 }
 
 
