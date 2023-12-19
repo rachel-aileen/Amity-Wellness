@@ -192,7 +192,7 @@ form {
 
 .form-row > input:focus {
   outline: none; 
-  border-bottom: 1.2px solid var(--secondary-color) !important; /* Changes the underline to purple */
+  border-bottom: 1.2px solid var(--secondary-color); /* Changes the underline to purple */
 }
 
 .form-row,

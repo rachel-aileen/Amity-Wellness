@@ -158,29 +158,31 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
   <!-- Filled Input/Textarea -->
   <script>
-   document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
   var inputs = document.querySelectorAll('.form-row > input, .form-full-width > textarea');
 
   function updateBorderColor() {
-    // This is the input field or textarea being checked
-    var borderColor = this.value.trim() !== '' || this === document.activeElement ? 'var(--secondary-color)' : '#ccc';
-    this.style.borderBottom = '1.2px solid ' + borderColor;
+    if (this.tagName.toLowerCase() === 'textarea') {
+      // For textarea, change all borders
+      this.style.border = this.value.trim() !== '' || this === document.activeElement ? '1.2px solid var(--secondary-color)' : '1.2px solid #ccc';
+    } else {
+      // For inputs, change only the bottom border
+      this.style.borderBottom = this.value.trim() !== '' || this === document.activeElement ? '1.2px solid var(--secondary-color)' : '1.2px solid #ccc';
+      this.style.borderLeft = 'none';
+      this.style.borderRight = 'none';
+      this.style.borderTop = 'none';
+    }
   }
 
   inputs.forEach(input => {
-    // Update border color when typing
     input.addEventListener('input', updateBorderColor);
-
-    // Update border color on focus
     input.addEventListener('focus', updateBorderColor);
-
-    // Update border color when not selected
     input.addEventListener('blur', updateBorderColor);
-
-    // Check current state of input/textarea
     updateBorderColor.call(input);
   });
 });
+
+
 
   </script>
   
