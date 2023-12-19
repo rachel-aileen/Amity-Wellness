@@ -171,10 +171,10 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         // Update border color when typing
         input.addEventListener('input', updateBorderColor);
   
-        // Update border color when focus is lost
+        // Update border color not seleected
         input.addEventListener('blur', updateBorderColor);
   
-        // Check initial state of each input/textarea
+        // Check current state of inut/textarea
         updateBorderColor.call(input);
       });
     });

@@ -220,7 +220,7 @@ form {
 
 .form-row > input:last-child {
   margin-right: 0;
-  margin-left: 0px; /* Only left margin for the last input */
+  margin-left: 0px; 
 }
 
 .form-row > input::placeholder,
@@ -249,14 +249,12 @@ textarea {
 }
 
 textarea:focus {
-  outline: none; /* Changes the outline to purple */
-  border: 1.2px solid var(--secondary-color);/* Optional: remove the border if you only want the outline */
+  outline: none;
+  border: 1.2px solid var(--secondary-color);
+ 
 }
 
-.filled {
-  border-bottom: 1.2px solid var(--secondary-color); /* For input fields */
-  border: 1.2px solid var(--secondary-color); /* For textarea */
-}
+
 
 
 
