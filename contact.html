@@ -108,8 +108,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
        </div>
      </div>
 
-<!-- Left Row -->
+<!-- Contact Rows -->
 <div class="contact-row-container">
+  <!-- Left Row -->
         <div class="row left-row" id="row1">
           <div class="row-content1">
             <h4 class="left-row-title">Schedule A Free Call</h4>
@@ -154,6 +155,37 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
           </div>
         </div>
   </div>
+
+  <!-- Filled Input/Textarea -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var inputs = document.querySelectorAll('.form-row > input, .form-full-width > textarea');
+  
+      function updateBorderColor() {
+        // This is the input field or textarea being checked
+        var borderColor = this.value.trim() !== '' ? 'var(--secondary-color)' : '#ccc';
+        this.style.borderBottom = '1.2px solid ' + borderColor;
+      }
+  
+      inputs.forEach(input => {
+        // Update border color when typing
+        input.addEventListener('input', updateBorderColor);
+  
+        // Update border color when focus is lost
+        input.addEventListener('blur', updateBorderColor);
+  
+        // Check initial state of each input/textarea
+        updateBorderColor.call(input);
+      });
+    });
+  </script>
+  
+  
+  
+  
+
+  
+    
 
         
     </body>
