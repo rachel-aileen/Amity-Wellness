@@ -176,13 +176,13 @@ form {
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-  flex: 1 0 100%; 
+  flex: 1 0 75%; 
   padding: 8px; 
   border: 1px solid #ccc; 
 }
 
 textarea {
-  flex: 1 50%; /* Each input takes equal width in a row */
+  flex: 1 0 50%; /* Each input takes equal width in a row */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   width: 100% !important; /* Stretch across the entire width of the form */
   height: 100px;
