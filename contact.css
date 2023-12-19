@@ -146,7 +146,7 @@ html, body {
   margin-right: 10%;
   padding-top: 10%;
   padding-bottom: 20%;
-  width: auto;
+  width: 75%;
 }
 
 .right-row-title {
@@ -168,29 +168,33 @@ form {
   gap: 10px; /* Adjust the space between form elements */
 }
 
-.form-row {
+.form-row,
+.form-full-width {
   display: flex;
-  gap: 10px; /* Adjust the space between inputs */
+  justify-content: space-between;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-  flex: 1 0 75%; 
-  padding: 8px; 
-  border: 1px solid #ccc; 
+.form-row > input,
+.form-full-width > textarea {
+  flex: 1 ; /* Each input and the textarea take equal width in a row */
+  margin: 0 0px; /* Adjust margin for spacing, if needed */
+}
+
+.form-row > input:first-child,
+.form-full-width > textarea {
+  margin-left: 0;
+}
+
+.form-row > input:last-child {
+  margin-right: 0;
 }
 
 textarea {
-  flex: 1 0 50%; /* Each input takes equal width in a row */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  width: 100% !important; /* Stretch across the entire width of the form */
-  height: 100px;
+  width: calc(100% - 10px); /* Adjust width to match the inputs above */
   padding: 8px; /* Adjust for padding */
   border: 1px solid #ccc; /* Border style, change as needed */
   height: 100px; /* Adjust height as needed */
   resize: vertical; /* Allows the user to resize vertically */
-  margin-top: 10px; /* Add some space above the textarea */
 }
 
 button[type="submit"] {
