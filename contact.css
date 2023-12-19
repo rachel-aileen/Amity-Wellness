@@ -87,27 +87,23 @@ html, body {
   width: 100%;
   display: flex;
   height: auto; /* Adjusted to auto */
+  flex-direction: row;
 }
 
-.row-content {
-  margin-left: 12%;
-  margin-left: 10%;
+.row-content1 {
+  margin-left: 20%;
+  margin-right: 10%;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 .row.test1 { 
-  width: 100%;
+  flex:1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
 
-}
-
-.row.test2 { 
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Aligns items to the start of the container */
 }
 
 .left-row-title {
@@ -125,15 +121,26 @@ html, body {
 
 .left-row-text {
   font-size: 17px;
-  margin-top: 4%; /* Reduced or adjusted margin-top */
+  padding-top: 8%;
+  padding-bottom: 8%;
   font-weight: 100;
   font-family: var(--secondary-font);
   color: var(--text-color);
+  line-height: 1.8;
 }
 
 #row1 {
   background-color: var(--tertiary-color);
 }
+
+.row.test2 { 
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns items to the start of the container */
+}
+
+
 
 #row2 {
   background-color: aqua;

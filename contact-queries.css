@@ -58,9 +58,22 @@
 .test-container {
     flex-direction: column;
   }
+
+  .row-content1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
   
-  .row.test { 
+  .row.test1 { 
     width: 100%;
+  }
+
+  .left-row-text {
+    padding-top: 4%;
+    padding-bottom: 4%;
+   
   }
   
   .row-text-1, .row-text-2 {
@@ -71,6 +84,7 @@
   .row-text-1 {
     padding-left: 5%;
     padding-right: 5%;
+  
   }
   
   .row-text-2 {
