@@ -109,7 +109,7 @@ header .navigation .menu{
   color: var(--secondary-text-color);
   font-family: var(--button-font-light);                                
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 100;
   text-decoration: none;
   margin: 20px;
   padding: 25px 16px;
@@ -325,7 +325,7 @@ header .navigation .menu{
   margin-bottom: 15px;
   color: #808080;
   font-family: var(--secondary-font);
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 0.5px;
   margin-bottom: 6%;
 }
@@ -336,7 +336,7 @@ header .navigation .menu{
   color: var(--secondary-text-color);
   font-family: var(--secondary-font);
   letter-spacing: 0.5px;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 6%;
 }
 
@@ -496,7 +496,7 @@ header .navigation .menu{
   text-transform:capitalize;
   font-family: var(--secondary-font);
   letter-spacing: 0.5px;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 6%;
 }
 

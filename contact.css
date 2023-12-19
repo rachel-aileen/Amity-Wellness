@@ -82,7 +82,7 @@ html, body {
   }
   
   
-/* ////////// Rows Test ////////// */
+/* ////////// Left Row ////////// */
 .contact-row-container {
   width: 100%;
   display: flex;
@@ -132,6 +132,8 @@ html, body {
   background-color: var(--tertiary-color);
 }
 
+/* ////////// Right Row ////////// */
+
 .row.test2 { 
   flex: 2;
   display: flex;
@@ -139,11 +141,68 @@ html, body {
   align-items: flex-start; /* Aligns items to the start of the container */
 }
 
-
-
-#row2 {
-  background-color: aqua;
+.row-content2 {
+  margin-left: 15%;
+  margin-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  width: auto;
 }
 
+.right-row-title {
+  font-size: 40px;
+  font-family: var(--primary-font);
+  font-weight: 100;
+   color: var(--text-color-dark);
+}
+
+#row2 {
+  background-color: var(--white-color);
+}
+
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust the space between form elements */
+}
+
+.form-row {
+  display: flex;
+  gap: 10px; /* Adjust the space between inputs */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  flex: 1 0 100%; 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+}
+
+textarea {
+  flex: 1 50%; /* Each input takes equal width in a row */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 100% !important; /* Stretch across the entire width of the form */
+  height: 100px;
+  padding: 8px; /* Adjust for padding */
+  border: 1px solid #ccc; /* Border style, change as needed */
+  height: 100px; /* Adjust height as needed */
+  resize: vertical; /* Allows the user to resize vertically */
+  margin-top: 10px; /* Add some space above the textarea */
+}
+
+button[type="submit"] {
+  padding: 10px 20px; /* Adjust button padding */
+  background-color: #4CAF50; /* Change button color as needed */
+  color: white; /* Change text color as needed */
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Hover effect for button */
+}
 
 
