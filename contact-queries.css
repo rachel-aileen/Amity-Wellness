@@ -62,7 +62,7 @@
 .form-full-width > textarea {
   display: block; /* Make each input/textarea a block element */
   width: 100%; /* Full width for each input/textarea */
-  margin-bottom: 20px; /* Uniform bottom margin for all inputs/textarea */
+  margin-bottom: 2%; /* Uniform bottom margin for all inputs/textarea */
 }
 
 /* Last input/textarea reset bottom margin */
