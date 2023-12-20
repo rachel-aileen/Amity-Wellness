@@ -121,6 +121,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex: 1;
+
 }
 
 .footer-section {
@@ -128,16 +129,17 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
+.footer-section.links {
+    align-items: flex-start; /* Align items to the left */
+}
 
-
-.links a {
+.footer-section.links a {
     text-decoration: none;
     color: inherit;
     padding: 0.5em;
-  
+    text-align: left; /* Left-align the text */
 }
 
 .footer-section.logo {
@@ -181,6 +183,10 @@ footer {
     .footer-section {
         margin-bottom: 1em;
     }
+
+    .footer-section.links {
+       align-items: center;
+}
 
     .footer-bottom {
         font-size: 0.7em;
