@@ -120,13 +120,12 @@ header .navigation .menu{
   transition: color 1s;
 }
 
-.menu-item > a:hover{
-  color: var(--primary-color);
+
+
+.menu-item > a:hover, .menu-item > a.active {
+  color: var(--primary-color); 
 }
 
-.menu-item a.active {
-  color: var(--primary-color);
-}
 
 
 .more .more-menu{
