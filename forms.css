@@ -27,7 +27,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  overflow-x: hidden; 
   background-color: var(--white-color);
   scroll-behavior: smooth;
 }
@@ -73,7 +73,7 @@ html, body {
 
 .content-container {
   text-align: center;
-  width: auto; /* Adjust width as needed */
+  width: auto; 
   margin: auto;
 }
 
@@ -101,7 +101,7 @@ margin-bottom: 4%;
 }
 
 .content-container input[type="password"]:focus {
-  outline: 1px solid var(--secondary-color); /* Set outline to orange when the element is focused */
+  outline: 1px solid var(--secondary-color);
 }
 
 
@@ -139,7 +139,7 @@ footer {
 }
 
 .footer-section.links {
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start; 
 }
 
 .footer-section.links a {
