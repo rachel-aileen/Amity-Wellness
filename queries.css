@@ -440,6 +440,71 @@
     padding: 20px 32px;
  
   }
+
+  /* ////////// Footer ////////// */
+  .footer-content {
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    padding-top: 15%;
+    padding-bottom: 0%;
+    flex-direction: column;
+  }
+
+.footer-section {
+  width: 100%;
+ }
+
+.footer-section.links {
+  display: flex;
+  justify-content: space-around; /* This will space out the links equally */
+  align-items: center;
+  flex-wrap: wrap; /* Allow the links to wrap if needed */
+}
+
+.footer-section.links a {
+    padding-bottom: 10%;
+  }
+
+.footer-section.logo {
+    margin-left: 0;
+    margin-right: 0%;
+    margin-bottom: 7%;
+    margin-top: 5%;
+  }
+
+.footer-logo {
+height: 3.5em;
+}
+
+.footer-section.back-to-top a {
+  margin-bottom: 6%;
+  transition: var(--tran-0-3);
+}
+
+.footer-section.socials {
+  display: flex; 
+  flex-direction: row; 
+  margin-bottom: 8%;
+}
+
+.footer-section.socials a {
+  display: inline-block;
+  margin: 0 4%;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  display: flex; 
+  flex-direction: column; /* Stack children vertically */
+  border-top: none;
+  padding-bottom: 6%; /* Add some padding at the bottom if needed */
+}
+
+.footer-bottom p {
+  margin-bottom: 8%; /* Add some space between the p elements */
+  width: 100%; /* Full width to occupy its own line */
+}
   
   }
         
