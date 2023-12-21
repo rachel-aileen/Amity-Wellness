@@ -162,6 +162,10 @@ header .navigation .menu{
   display: none;
 }
 
+.sub-menu {
+  display: none;
+}
+
 
 /* ////////// About Section ////////// */
 .hero-image {
