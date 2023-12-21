@@ -45,59 +45,74 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
 <body>
 <!-- Navigation Bar -->
-    <header>
-      <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
-      <div class="navigation">
-        <ul class="menu">
-          <div class="close-btn"></div>
-          <li class="menu-item"><a href="index.html">Home</a></li>
-          <li class="menu-item"><a href="about.html">About</a></li>
-          <li class="menu-item">
-            <a class="sub-btn" href="#">Services </a>
-            
-          </li>
+  <header>
+    <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+    <div class="navigation">
+      <ul class="menu">
+        <div class="close-btn"></div>
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="about.html">About</a></li>
+        <li class="menu-item">
+          <a class="sub-btn" href="#">Services </a>
+          <!-- Submenu -->
+            <ul class="sub-menu">
+              <li><a href="#">Contraception</a></li>
+              <li><a href="#">Menopause</a></li>
+              <li><a href="#">Pap Smear</a></li>
+              <li><a href="#">Pregnancy</a></li>
+              <li><a href="#">UTI Treatment</a></li>
+              <li><a href="#">Wellness Exam</a></li>
+            </ul>
           
-          <li class="menu-item"><a href="fees.html">Fees</a></li>
-          <li class="menu-item"><a href="forms.html">Forms</a></li>
-          <li class="menu-item"><a href="#" class="active">Contact</a></li>
-        </ul>
-      </div>
-      <div class="menu-btn"></div>
-    </header>
-
-    <script type="text/javascript">
-        //jquery for toggle dropdown menus
-        $(document).ready(function(){
-          //toggle sub-menus
-          $(".sub-btn").click(function(){
+        </li>
+        
+        <li class="menu-item"><a href="fees.html" >Fees</a></li>
+        <li class="menu-item"><a href="forms.html">Forms</a></li>
+        <li class="menu-item"><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+    <div class="menu-btn"></div>
+  </header>
+<!-- Navbar Javascript -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+        // Toggle sub-menus
+        $(".sub-btn").click(function(){
             $(this).next(".sub-menu").slideToggle();
-          });
-    
-          //toggle more-menus
-          $(".more-btn").click(function(){
-            $(this).next(".more-menu").slideToggle();
-          });
         });
-    
-        //javascript for the responsive navigation menu
+
+        // Toggle more-menus
+        $(".more-btn").click(function(){
+            $(this).next(".more-menu").slideToggle();
+        });
+
+        // Responsive navigation menu
         var menu = document.querySelector(".menu");
         var menuBtn = document.querySelector(".menu-btn");
         var closeBtn = document.querySelector(".close-btn");
-    
+
         menuBtn.addEventListener("click", () => {
-          menu.classList.add("active");
+            menu.classList.add("active");
         });
-    
+
         closeBtn.addEventListener("click", () => {
-          menu.classList.remove("active");
+            menu.classList.remove("active");
         });
-    
-        //javascript for the navigation bar effects on scroll
+
+        // Navigation bar effects on scroll
         window.addEventListener("scroll", function(){
-          var header = document.querySelector("header");
-          header.classList.toggle("sticky", window.scrollY > 0);
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
         });
-        </script>
+
+        // Hide sub-menu on window resize if width is greater than 1200px
+        $(window).resize(function() {
+            if ($(window).width() > 1200) {
+                $(".sub-menu").css('display', 'none');
+            }
+        });
+    });
+  </script>
 
 
  <!-- Contact Image -->
