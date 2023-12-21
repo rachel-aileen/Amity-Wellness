@@ -28,6 +28,7 @@ html, body {
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrollbar */
   background-color: var(--white-color);
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -52,6 +53,7 @@ html, body {
   --border-color: #E0B2C6;
   --white-color: #FFFEFC;
   --section-bg: #F0E3E9;
+  --footer-color-hover: #F0D3E8;
 
   /* transition */
   --tran-0-2: 0.2s;
