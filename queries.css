@@ -99,6 +99,32 @@
       padding: 10px 20px;
     }
 
+    .menu-item > a{                              
+      font-size: 13px;
+    }
+
+    /* ////////// Submenu ////////// */
+
+    .sub-menu {
+      display: none;
+      list-style: none;
+     padding-left: 8%;
+      background: var(--tertiary-color);
+    }
+  
+    .sub-menu li {
+      padding: 0% 8%; 
+    }
+  
+    .sub-menu li a {
+      color: var(--secondary-text-color);
+      text-decoration: none;
+      font-size: 12px;
+      font-family: var(--button-font-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
 
 
 /* ///////Hero Section ///////*/
