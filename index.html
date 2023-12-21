@@ -55,8 +55,11 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             <!-- Submenu -->
               <ul class="sub-menu">
                 <li><a href="#">Contraception</a></li>
-                <li><a href="#">Service 2</a></li>
-                <li><a href="#">Service 3</a></li>
+                <li><a href="#">Menopause</a></li>
+                <li><a href="#">Pap Smear</a></li>
+                <li><a href="#">Pregnancy</a></li>
+                <li><a href="#">UTI Treatment</a></li>
+                <li><a href="#">Wellness Exam</a></li>
               </ul>
             
           </li>
@@ -70,38 +73,45 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     </header>
 
     <script type="text/javascript">
-        //jquery for toggle dropdown menus
-        $(document).ready(function(){
-          //toggle sub-menus
+      $(document).ready(function(){
+          // Toggle sub-menus
           $(".sub-btn").click(function(){
-            $(this).next(".sub-menu").slideToggle();
+              $(this).next(".sub-menu").slideToggle();
           });
-    
-          //toggle more-menus
+  
+          // Toggle more-menus
           $(".more-btn").click(function(){
-            $(this).next(".more-menu").slideToggle();
+              $(this).next(".more-menu").slideToggle();
           });
-        });
-    
-        //javascript for the responsive navigation menu
-        var menu = document.querySelector(".menu");
-        var menuBtn = document.querySelector(".menu-btn");
-        var closeBtn = document.querySelector(".close-btn");
-    
-        menuBtn.addEventListener("click", () => {
-          menu.classList.add("active");
-        });
-    
-        closeBtn.addEventListener("click", () => {
-          menu.classList.remove("active");
-        });
-    
-        //javascript for the navigation bar effects on scroll
-        window.addEventListener("scroll", function(){
-          var header = document.querySelector("header");
-          header.classList.toggle("sticky", window.scrollY > 0);
-        });
-        </script>
+  
+          // Responsive navigation menu
+          var menu = document.querySelector(".menu");
+          var menuBtn = document.querySelector(".menu-btn");
+          var closeBtn = document.querySelector(".close-btn");
+  
+          menuBtn.addEventListener("click", () => {
+              menu.classList.add("active");
+          });
+  
+          closeBtn.addEventListener("click", () => {
+              menu.classList.remove("active");
+          });
+  
+          // Navigation bar effects on scroll
+          window.addEventListener("scroll", function(){
+              var header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY > 0);
+          });
+  
+          // Hide sub-menu on window resize if width is greater than 1200px
+          $(window).resize(function() {
+              if ($(window).width() > 1200) {
+                  $(".sub-menu").css('display', 'none');
+              }
+          });
+      });
+  </script>
+  
 
  <!-- Hero Section -->
 

@@ -108,7 +108,7 @@
     .sub-menu {
       display: none;
       list-style: none;
-     padding-left: 8%;
+     padding-left: 6%;
       background: var(--tertiary-color);
     }
   
