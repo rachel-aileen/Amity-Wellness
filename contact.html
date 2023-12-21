@@ -53,7 +53,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         <li class="menu-item"><a href="index.html">Home</a></li>
         <li class="menu-item"><a href="about.html">About</a></li>
         <li class="menu-item">
-          <a class="sub-btn" href="#">Services </a>
+          <a class="sub-btn" href="services.html">Services </a>
           <!-- Submenu -->
             <ul class="sub-menu">
               <li><a href="#">Contraception</a></li>
@@ -75,14 +75,19 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
   </header>
 <!-- Navbar Javascript -->
   <script type="text/javascript">
-    $(document).ready(function(){
-        // Toggle sub-menus
-        $(".sub-btn").click(function(){
-            $(this).next(".sub-menu").slideToggle();
+    $(document).ready(function() {
+        // Toggle sub-menus only if screen width is less than 1200px
+        $(".sub-btn").click(function() {
+            if ($(window).width() < 1200) {
+                $(this).next(".sub-menu").slideToggle();
+            } else {
+                // Assuming 'services.html' is the link to your Services page. Change as needed.
+                window.location.href = "services.html"; 
+            }
         });
 
         // Toggle more-menus
-        $(".more-btn").click(function(){
+        $(".more-btn").click(function() {
             $(this).next(".more-menu").slideToggle();
         });
 
@@ -100,7 +105,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         });
 
         // Navigation bar effects on scroll
-        window.addEventListener("scroll", function(){
+        window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         });
