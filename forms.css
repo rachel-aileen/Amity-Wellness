@@ -116,7 +116,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.8em;
+ 
 }
 
 .footer-content {
@@ -127,8 +127,6 @@ footer {
     margin: auto; 
     padding-top: 3%;
     padding-bottom: 2%;
-  
-
 }
 
 .footer-section {
@@ -227,18 +225,39 @@ footer {
   color: var(--footer-color-hover);
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 1200px) {
 
-    .footer-section {
-        margin-bottom: 1em;
-    }
+ .footer-content {
+      justify-content: center;
+      align-items: center;
+      margin: auto; 
+      padding-top: 5%;
+      padding-bottom: 0%;
+      flex-direction: column;
+  }
 
-    .footer-section.links {
-       align-items: center;
+  .footer-section {
+    width: 100%;
+}
+
+  .footer-section.links {
+    display: flex;
+    justify-content: space-around; /* This will space out the links equally */
+    align-items: center;
+    flex-wrap: wrap; /* Allow the links to wrap if needed */
+}
+
+  .footer-section.links a {
+    text-decoration: none;
+      color: var(--tertiary-color);
+      text-align: center; 
+      font-family: var(--button-font);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      margin-bottom: 10px; /* Adjust the bottom margin as needed */
+      padding: 5px; /* Add some padding for better touch targets */
+      transition: var(--tran-0-5); 
 }
 
     .footer-bottom {
