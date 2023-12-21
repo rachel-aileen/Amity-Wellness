@@ -253,7 +253,7 @@ footer {
 .footer-section.logo {
       margin-left: 0;
       margin-right: 0%;
-      margin-bottom: 5%;
+      margin-bottom: 7%;
       margin-top: 5%;
     }
 
@@ -279,9 +279,19 @@ footer {
   }
 
 .footer-bottom {
-    font-size: 0.7em;
+    display: flex; 
+    flex-direction: column; /* Stack children vertically */
     border-top: none;
+    padding-bottom: 6%; /* Add some padding at the bottom if needed */
   }
+
+  .footer-bottom p {
+    margin-bottom: 8%; /* Add some space between the p elements */
+    width: 100%; /* Full width to occupy its own line */
+  }
+
+
 }
+
 
 
