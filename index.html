@@ -107,6 +107,12 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
                 $(".sub-menu").css('display', 'none');
             }
         });
+
+        // Add 'active' class to the 'Services' link if on Services page
+        var servicesLink = document.querySelector('.menu-item a[href="services.html"]');
+        if (window.location.href.includes('services.html')) {
+            servicesLink.classList.add('active');
+        }
     });
   </script>
   

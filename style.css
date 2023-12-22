@@ -165,6 +165,14 @@ header .navigation .menu{
   display: none;
 }
 
+.sub-menu a {
+  transition: 1s;
+}
+
+.sub-menu a:hover {
+  color: var(--primary-color);
+}
+
 
 /* ////////// About Section ////////// */
 .hero-image {
