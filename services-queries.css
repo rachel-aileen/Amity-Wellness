@@ -40,45 +40,32 @@
   }
 
   .row.left-row { 
-    width: 100%;
+    display: none;
   }
 
-  .row-content1 {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  
-
-  .left-row-text {
-    padding-top: 4%;
-    padding-bottom: 4%;
-   
-  }
-  
-  .row-text-1, .row-text-2 {
-    text-align: left; 
-    width: 100%;
-  }
-  
-  .row-text-1 {
-    padding-left: 5%;
-    padding-right: 5%;
-  
-  }
-  
-  .row-text-2 {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+ 
 
   /* ////////// Right Row ////////// */
+
+
+  .contra-img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; 
+  }
+
+  .row.test2 { 
+    flex: none; /* Remove flex if you don't need it to flex */
+    width: 100%; /* Assuming the remaining half of the screen */
+    margin-left: 0%; /* Adjust based on the left column's width */
+    height: auto;
+  
+  }
 
   .row-content2 {
     margin-left: 5%;
     margin-right: 10%;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-bottom: 10%;
     width: 90%;
   }

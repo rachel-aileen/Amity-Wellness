@@ -58,24 +58,24 @@ html, body {
   
 /* ////////// Left Row ////////// */
 .services-row-container {
-  width: 100%;
-  display: flex;
-  height: auto; /* Adjusted to auto */
-  flex-direction: row;
-}
+    width: 100%;
+    display: flex;
+    position: relative; /* Ensure it's positioned relatively */
+  }
 
 .row.left-row { 
-  flex:1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 100vh;
-}
+    position: fixed; /* Fix the position */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left side */
+    height: 100vh; /* Full viewport height */
+    width: 30%; /* Adjust the width as needed, assuming 50% for half the screen */
+    overflow-y: auto; /* Allows content to scroll if it overflows */
+  }
 
 .row-content1 {
   margin-left: 20%;
   margin-right: 10%;
-  padding-top: 20%;
+  padding-top: 0%;
   padding-bottom: 20%;
 }
 
@@ -90,7 +90,7 @@ html, body {
   font-family: var(--button-font);
   letter-spacing: 4px;
   font-weight: 600;
-  margin-top: 25%; 
+  margin-top: 0%; 
   margin-bottom: 15%;
 }
 
@@ -135,17 +135,18 @@ html, body {
   
   }
 
-.row.test2 { 
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-}
+  .row.test2 { 
+    flex: none; /* Remove flex if you don't need it to flex */
+    width: 75%; /* Assuming the remaining half of the screen */
+    margin-left: 25%; /* Adjust based on the left column's width */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allows content to scroll if it overflows */
+  }
 
 .row-content2 {
   margin-left: 15%;
   margin-right: 10%;
-  padding-top: 10%;
+  padding-top: 8%;
   padding-bottom: 20%;
   width: 70%;
 }
@@ -161,12 +162,3 @@ html, body {
 #row2 {
   background-color: var(--white-color);
 }
-
-
-
-
-
-
-
-
-
