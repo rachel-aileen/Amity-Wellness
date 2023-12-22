@@ -105,6 +105,10 @@ html, body {
   transition: color 1s;
 }
 
+.left-row-text.active {
+    color: var(--primary-color);
+  }
+
 .left-row-text:hover {
     color: var(--primary-color);
   }
