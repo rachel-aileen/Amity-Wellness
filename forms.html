@@ -74,22 +74,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 <!-- Navbar Javascript -->
   <script type="text/javascript">
     $(document).ready(function() {
-        // Toggle sub-menus only if screen width is less than 1200px
-        $(".sub-btn").click(function() {
+        // Prevent default click action for 'Services' link on smaller screens
+        $(".sub-btn").click(function(e) {
             if ($(window).width() < 1200) {
+                e.preventDefault(); // Prevent navigation
                 $(this).next(".sub-menu").slideToggle();
-            } else {
-                // Assuming 'services.html' is the link to your Services page. Change as needed.
-                window.location.href = "services.html"; 
             }
         });
 
-        // Toggle more-menus
-        $(".more-btn").click(function() {
-            $(this).next(".more-menu").slideToggle();
-        });
-
-        // Responsive navigation menu
+        // Responsive navigation menu toggle
         var menu = document.querySelector(".menu");
         var menuBtn = document.querySelector(".menu-btn");
         var closeBtn = document.querySelector(".close-btn");
@@ -102,7 +95,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
             menu.classList.remove("active");
         });
 
-        // Navigation bar effects on scroll
+        // Sticky header on scroll
         window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);

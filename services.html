@@ -51,7 +51,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         <li class="menu-item"><a href="index.html">Home</a></li>
         <li class="menu-item"><a href="about.html">About</a></li>
         <li class="menu-item">
-          <a class="sub-btn active" href="#">Services </a>
+          <a class="sub-btn active" href="services.html">Services </a>
           <!-- Submenu -->
             <ul class="sub-menu">
               <li><a href="#">Contraception</a></li>
@@ -72,50 +72,44 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     <div class="menu-btn"></div>
   </header>
 <!-- Navbar Javascript -->
-<script type="text/javascript">
-  $(document).ready(function() {
-      // Toggle sub-menus only if screen width is less than 1200px
-      $(".sub-btn").click(function() {
-          if ($(window).width() < 1200) {
-              $(this).next(".sub-menu").slideToggle();
-          } else {
-              // Assuming 'services.html' is the link to your Services page. Change as needed.
-              window.location.href = "services.html"; 
-          }
-      });
+  <script type="text/javascript">
+    $(document).ready(function() {
+        // Prevent default click action for 'Services' link on smaller screens
+        $(".sub-btn").click(function(e) {
+            if ($(window).width() < 1200) {
+                e.preventDefault(); // Prevent navigation
+                $(this).next(".sub-menu").slideToggle();
+            }
+        });
 
-      // Toggle more-menus
-      $(".more-btn").click(function() {
-          $(this).next(".more-menu").slideToggle();
-      });
+        // Responsive navigation menu toggle
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
 
-      // Responsive navigation menu
-      var menu = document.querySelector(".menu");
-      var menuBtn = document.querySelector(".menu-btn");
-      var closeBtn = document.querySelector(".close-btn");
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
 
-      menuBtn.addEventListener("click", () => {
-          menu.classList.add("active");
-      });
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
 
-      closeBtn.addEventListener("click", () => {
-          menu.classList.remove("active");
-      });
+        // Sticky header on scroll
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
 
-      // Navigation bar effects on scroll
-      window.addEventListener("scroll", function() {
-          var header = document.querySelector("header");
-          header.classList.toggle("sticky", window.scrollY > 0);
-      });
+        // Hide sub-menu on window resize if width is greater than 1200px
+        $(window).resize(function() {
+            if ($(window).width() > 1200) {
+                $(".sub-menu").css('display', 'none');
+            }
+        });
+    });
+  </script>
 
-      // Hide sub-menu on window resize if width is greater than 1200px
-      $(window).resize(function() {
-          if ($(window).width() > 1200) {
-              $(".sub-menu").css('display', 'none');
-          }
-      });
-  });
-</script>
 
   </script>
 
