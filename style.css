@@ -911,7 +911,7 @@ header .navigation .menu{
   color: var(--white-color);
 }
 
-/* ////////// Footer ////////// */
+
 /* ////////// Footer ////////// */
 footer {
   width: 100%;
@@ -923,6 +923,9 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
+  position: relative;
+
 
 }
 

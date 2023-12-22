@@ -47,6 +47,7 @@
       overflow-y: auto;
       transition: 0.5s;
       transition-property: right, visibility;
+      
     }
 
     .logo{
@@ -470,6 +471,12 @@
   }
 
   /* ////////// Footer ////////// */
+
+  footer {
+    z-index: 1;
+  }
+
+
   .footer-content {
     justify-content: center;
     align-items: center;
@@ -479,6 +486,7 @@
     flex-direction: column;
   }
 
+  
 .footer-section {
   width: 100%;
  }
