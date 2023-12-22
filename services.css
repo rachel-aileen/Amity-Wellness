@@ -124,13 +124,22 @@ html, body {
   background-color: var(--tertiary-color);
 }
 
+
+
 /* ////////// Right Row ////////// */
+
+.contra-img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover; 
+  
+  }
 
 .row.test2 { 
   flex: 2;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Aligns items to the start of the container */
+  align-items: flex-start; 
 }
 
 .row-content2 {
