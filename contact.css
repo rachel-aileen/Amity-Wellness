@@ -56,32 +56,30 @@ html, body {
 
 /* ////////// Contact Image ////////// */
 .contact-image {
-    position: relative;
-    height: 70vh;
-    overflow: hidden;
-    background-size: cover;
-    background: url(images/contact-img.png) no-repeat center center / cover; 
-  }
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  background-size: cover;
+  background: url(images/contact-img.png) no-repeat center center / cover; 
+}
 
-  .contact-text {
-    text-align: center;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--text-color);
-  }
-  
-  
-  .contact-title {
-    font-family: var(--primary-font);                                 
-    padding-bottom: 32px;
-    font-size: 40px;
-    font-weight: 100;
-    color: var(--white-color);
-  }
-  
-  
+.contact-text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+}
+
+
+.contact-title {
+  font-family: var(--primary-font);                                 
+  padding-bottom: 32px;
+  font-size: 40px;
+  font-weight: 100;
+  color: var(--white-color);
+}
 /* ////////// Left Row ////////// */
 .contact-row-container {
   width: 100%;

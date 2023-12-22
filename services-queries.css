@@ -1,0 +1,108 @@
+@media (max-width: 1200px){
+
+    :root {
+        /* Font Sizes & Family */
+        --primary-font: 'Canela Text Trial', sans-serif;
+        --secondary-font: 'HK Grotesk', sans-serif;  
+        --button-font: "Sweet Sans Pro, Bold";
+        --button-font-light: 'Sweet Sans Pro', serif;
+      
+      
+        /* Color Variables */
+        --primary-color: #DB9BB7;
+        --primary-color-hover: #92749E;
+        --secondary-color: #B09BB9;
+        --tertiary-color: #FFF5FC;
+        --text-color: #435A68;
+        --text-color-dark: #787D98;
+        --text-color-light: #F1E8F4;
+        --secondary-text-color: #75858F;
+        --tertiary-text-color: #667A86;
+        --border-color: #E0B2C6;
+        --white-color: #FFFEFC;
+        --section-bg: #F0E3E9;
+      
+        /* transition */
+        --tran-0-2: 0.2s;
+        --tran-0-3: 0.3s;
+        --tran-0-5: 0.5s;
+      }
+    
+
+
+/* ////////// Form ////////// */
+
+.form-row > input,
+.form-full-width > textarea {
+  display: block; /* Make each input/textarea a block element */
+  width: 100%; /* Full width for each input/textarea */
+  margin-bottom: 2%; /* Uniform bottom margin for all inputs/textarea */
+}
+
+/* Last input/textarea reset bottom margin */
+.form-row:last-child > input,
+.form-full-width:last-child > textarea {
+  margin-bottom: 0; /* Remove bottom margin from the last input/textarea */
+}
+
+
+
+/* ////////// Left Row ////////// */
+.services-row-container {
+    flex-direction: column;
+  }
+
+  .row.left-row { 
+    width: 100%;
+  }
+
+  .row-content1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+
+  .left-row-text {
+    padding-top: 4%;
+    padding-bottom: 4%;
+   
+  }
+  
+  .row-text-1, .row-text-2 {
+    text-align: left; 
+    width: 100%;
+  }
+  
+  .row-text-1 {
+    padding-left: 5%;
+    padding-right: 5%;
+  
+  }
+  
+  .row-text-2 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* ////////// Right Row ////////// */
+
+  .row-content2 {
+    margin-left: 5%;
+    margin-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 90%;
+  }
+  
+  
+  .right-row-title {
+    font-size: 32px;
+  
+  }
+
+
+
+
+}

@@ -13,7 +13,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="queries.css" />
 <link rel="stylesheet" href="services.css">
-<link rel="stylesheet" href="serv">
+<link rel="stylesheet" href="services-queries.css">
 <link href="https://fonts.cdnfonts.com/css/sweet-sans-pro" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/favicon.png">
                 
@@ -118,46 +118,91 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
 
 
-  </script>
+
+<!-- Services Rows -->
+<div class="services-row-container">
+<!-- Left Row -->
+      <div class="row left-row" id="row1">
+        <div class="row-content1">
+          <h4 class="left-row-title">OBGYN Services</h4>
+          <a href="services.html"><h4 class="left-row-text">Contraception</h4></a>
+          <h4 class="left-row-text">Menopause</h4>
+          <h4 class="left-row-text">Pap Smear</h4>
+          <h4 class="left-row-text">Pregnancy</h4>
+          <h4 class="left-row-text">UTI Treatment</h4>
+          <h4 class="left-row-text">Wellness Exam</h4>
+          
+              
+        </div>      
+      </div>
+
+<!-- Right Row -->
+      <div class="row test2" id="row2">
+        <div class="row-content2">
+          <h1 class="right-row-title">We'd love to hear from you</h1>
+
+          <!-- Form -->
+          <form action="#" method="post"> <!-- Replace # with your form submission link -->
+
+            <!-- First Row: First and Last Name -->
+            <div class="form-row">
+              <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+              <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+      
+            <!-- Second Row: Email and Phone Number -->
+            <div class="form-row">
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <!-- New Textarea for Additional Information -->
+            <div class="form-full-width">
+              <textarea id="additional-info" name="additional-info" placeholder="Questions/Comments" required></textarea>
+            </div>
+      
+            <!-- Send Button -->
+           <button class="hero-button">Send</button>
+      
+          </form>
+
+        </div>
+      </div>
+</div>
+
+<!-- Form Javascript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var inputs = document.querySelectorAll('.form-row > input, .form-full-width > textarea');
+
+function updateBorderColor() {
+  if (this.tagName.toLowerCase() === 'textarea') {
+    // For textarea, change all borders
+    this.style.border = this.value.trim() !== '' || this === document.activeElement ? '1.2px solid var(--secondary-color)' : '1.2px solid #ccc';
+  } else {
+    // For inputs, change only the bottom border
+    this.style.borderBottom = this.value.trim() !== '' || this === document.activeElement ? '1.2px solid var(--secondary-color)' : '1.2px solid #ccc';
+    this.style.borderLeft = 'none';
+    this.style.borderRight = 'none';
+    this.style.borderTop = 'none';
+  }
+}
+
+inputs.forEach(input => {
+  input.addEventListener('input', updateBorderColor);
+  input.addEventListener('focus', updateBorderColor);
+  input.addEventListener('blur', updateBorderColor);
+  updateBorderColor.call(input);
+});
+});
+
+
+
+</script>
 
     
 
-<!-- Footer -->
-<footer>
-  <div class="footer-content">
-      <div class="footer-section links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          
-      </div>
-      <div class="footer-section links">
-          <a href="#">Fees</a>
-          <a href="#">Forms</a>
-          <a href="#">Contact</a>
-        
-      </div>
 
-      <!-- Footer Logo -->
-      <div class="footer-section logo">
-          
-          <a href="index.html"><img src="images/footer-logo.png" class="footer-logo" alt=""></a>
-      </div>
-      <div class="footer-section back-to-top">
-          <a href="#top" class="scrollUp-btn" flex>Scroll back up!</a>
-      </div>
-      <div class="footer-section socials">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-  </div>
-    <!-- Footer Bottom -->
-  <div class="footer-bottom">
-      <p>&copy; Ally Health OBGYN Group 2024</p>
-      <p class="welldone-link">Brand & Website by Welldone</p>
-  </div>
-</footer>
 
 
 
