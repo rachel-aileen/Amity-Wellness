@@ -51,7 +51,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         <li class="menu-item"><a href="index.html">Home</a></li>
         <li class="menu-item"><a href="about.html">About</a></li>
         <li class="menu-item">
-          <a class="sub-btn active" href="services.html">Services </a>
+          <a class="sub-btn" href="services.html">Services </a>
           <!-- Submenu -->
             <ul class="sub-menu">
               <li><a href="#">Contraception</a></li>
@@ -107,8 +107,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
                 $(".sub-menu").css('display', 'none');
             }
         });
+
+        // Add 'active' class to the 'Services' link if on Services page
+        var servicesLink = document.querySelector('.menu-item a[href="services.html"]');
+        if (window.location.href.includes('services.html')) {
+            servicesLink.classList.add('active');
+        }
     });
   </script>
+
 
 
   </script>
