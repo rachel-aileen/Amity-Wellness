@@ -62,7 +62,7 @@ html, body {
     height: 70vh;
     overflow: hidden;
     background-size: cover;
-    background: url(images/fees-cover-photo.png) no-repeat center center / cover; 
+    background: url(images/fees-photo.png) no-repeat center center / cover; 
   }
 
   .fees-text {
