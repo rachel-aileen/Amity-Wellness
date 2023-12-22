@@ -144,64 +144,13 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         <div class="row-content2">
           <h1 class="right-row-title">We'd love to hear from you</h1>
 
-          <!-- Form -->
-          <form action="#" method="post"> <!-- Replace # with your form submission link -->
-
-            <!-- First Row: First and Last Name -->
-            <div class="form-row">
-              <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
-              <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
-            </div>
       
-            <!-- Second Row: Email and Phone Number -->
-            <div class="form-row">
-              <input type="email" id="email" name="email" placeholder="Email Address" required>
-              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-            </div>
-
-            <!-- New Textarea for Additional Information -->
-            <div class="form-full-width">
-              <textarea id="additional-info" name="additional-info" placeholder="Questions/Comments" required></textarea>
-            </div>
-      
-            <!-- Send Button -->
-           <button class="hero-button">Send</button>
-      
-          </form>
 
         </div>
       </div>
 </div>
 
-<!-- Form Javascript -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-var inputs = document.querySelectorAll('.form-row > input, .form-full-width > textarea');
 
-function updateBorderColor() {
-  if (this.tagName.toLowerCase() === 'textarea') {
-    // For textarea, change all borders
-    this.style.border = this.value.trim() !== '' || this === document.activeElement ? '1.2px solid var(--secondary-color)' : '1.2px solid #ccc';
-  } else {
-    // For inputs, change only the bottom border
-    this.style.borderBottom = this.value.trim() !== '' || this === document.activeElement ? '1.2px solid var(--secondary-color)' : '1.2px solid #ccc';
-    this.style.borderLeft = 'none';
-    this.style.borderRight = 'none';
-    this.style.borderTop = 'none';
-  }
-}
-
-inputs.forEach(input => {
-  input.addEventListener('input', updateBorderColor);
-  input.addEventListener('focus', updateBorderColor);
-  input.addEventListener('blur', updateBorderColor);
-  updateBorderColor.call(input);
-});
-});
-
-
-
-</script>
 
     
 

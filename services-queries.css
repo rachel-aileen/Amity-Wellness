@@ -30,20 +30,7 @@
     
 
 
-/* ////////// Form ////////// */
 
-.form-row > input,
-.form-full-width > textarea {
-  display: block; /* Make each input/textarea a block element */
-  width: 100%; /* Full width for each input/textarea */
-  margin-bottom: 2%; /* Uniform bottom margin for all inputs/textarea */
-}
-
-/* Last input/textarea reset bottom margin */
-.form-row:last-child > input,
-.form-full-width:last-child > textarea {
-  margin-bottom: 0; /* Remove bottom margin from the last input/textarea */
-}
 
 
 
