@@ -71,8 +71,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     </div>
     <div class="menu-btn"></div>
   </header>
+
 <!-- Navbar Javascript -->
-  <script type="text/javascript">
+  <script type="text/javascript"> 
     $(document).ready(function() {
         // Prevent default click action for 'Services' link on smaller screens
         $(".sub-btn").click(function(e) {
@@ -81,41 +82,54 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
                 $(this).next(".sub-menu").slideToggle();
             }
         });
-
+    
         // Responsive navigation menu toggle
         var menu = document.querySelector(".menu");
         var menuBtn = document.querySelector(".menu-btn");
         var closeBtn = document.querySelector(".close-btn");
-
+    
         menuBtn.addEventListener("click", () => {
             menu.classList.add("active");
         });
-
+    
         closeBtn.addEventListener("click", () => {
             menu.classList.remove("active");
         });
-
+    
         // Sticky header on scroll
         window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         });
-
+    
         // Hide sub-menu on window resize if width is greater than 1200px
         $(window).resize(function() {
             if ($(window).width() > 1200) {
                 $(".sub-menu").css('display', 'none');
             }
         });
-
-        // Add 'active' class to the 'Services' link if on Services page
-        var servicesLink = document.querySelector('.menu-item a[href="services.html"]');
-        if (window.location.href.includes('services.html')) {
-            servicesLink.classList.add('active');
+    
+        // Function to add 'active' class to Services link
+        function highlightServiceLink() {
+            var currentPage = window.location.href;
+            var servicesLink = $('.menu-item a[href="services.html"]');
+    
+            if (currentPage.includes('services.html') || currentPage.includes('menopause.html')
+            || currentPage.includes('pap-smear.html') || currentPage.includes('pregnancy.html')
+              || currentPage.includes('uti-treatment.html') || currentPage.includes('wellness-exam.html')) {
+                servicesLink.addClass('active');
+            } else {
+                servicesLink.removeClass('active');
+            }
         }
-        if (window.location.href.includes('services.html')) {
-          $('.left-row-text active').addClass('active');
-      }
+    
+        // Call the function to highlight Services link on page load
+        highlightServiceLink();
+    
+        // Ensure the Services link is highlighted correctly when navigating between pages
+        $(window).on('popstate', function() {
+            highlightServiceLink();
+        });
     });
   </script>
 
@@ -144,7 +158,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
       <div class="row test2" id="row2">
         <img src="images/wellness-exam-img.png" alt="" class="contraception-img">
         <div class="row-content2">
-          <h1 class="right-row-title">Contraception Options for All Women</h1>
+          <h1 class="right-row-title">Wellness Woman Exam Annual Check-Ups for a Better Tomorrow</h1>
 
       
 

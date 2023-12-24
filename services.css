@@ -135,19 +135,23 @@ html, body {
   
   }
 
+  #row2 {
+    background-color: var(--white-color);
+  }
+
   .row.test2 { 
-    flex: none; /* Remove flex if you don't need it to flex */
-    width: 75%; /* Assuming the remaining half of the screen */
-    margin-left: 25%; /* Adjust based on the left column's width */
-    height: 100vh; /* Full viewport height */
-    overflow-y: auto; /* Allows content to scroll if it overflows */
+    flex: none; 
+    width: 75%; 
+    margin-left: 25%; 
+    height: 100vh; 
+    overflow-y: auto; 
   }
 
 .row-content2 {
   margin-left: 15%;
   margin-right: 10%;
   padding-top: 8%;
-  padding-bottom: 20%;
+  padding-bottom: 6%;
   width: 70%;
 }
 
@@ -156,9 +160,22 @@ html, body {
   font-family: var(--primary-font);
   font-weight: 100;
    color: var(--text-color-dark);
-   padding-bottom: 8%;
+   padding-bottom: 6%;
 }
 
-#row2 {
-  background-color: var(--white-color);
+.right-row-subtitle {
+  font-size: 17px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+   color: var(--secondary-text-color);
+   padding-bottom: 6%;
+}
+
+.right-row-text {
+  font-size: 17px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+   color: var(--secondary-text-color);
+   padding-bottom: 3%;
+   line-height: 2;
 }
