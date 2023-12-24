@@ -169,6 +169,7 @@ html, body {
   font-weight: 600;
    color: var(--secondary-text-color);
    padding-bottom: 6%;
+   line-height: 2;
 }
 
 .right-row-text {
