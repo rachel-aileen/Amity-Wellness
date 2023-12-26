@@ -80,8 +80,8 @@
   .row.left-row .centered-image {
     max-width: 80%; /* Controls image size, adjust as needed */
     height: auto; /* Maintains aspect ratio */
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 12%;
+    padding-bottom: 12%;
   
   }
   
@@ -91,9 +91,9 @@
 
   .row-content2 {
     margin-left: 5%;
-    margin-right: 10%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    margin-right: 5%;
+    padding-top: 12%;
+    padding-bottom: 12%;
     width: 90%;
   }
   
