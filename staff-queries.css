@@ -85,29 +85,16 @@
     padding-top: 10%;
     padding-bottom: 10%;
   }
+
+  .row.left-row .centered-image {
+    max-width: 100%; 
+    height: auto;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+  }
   
 
-  .left-row-text {
-    padding-top: 4%;
-    padding-bottom: 4%;
-   
-  }
-  
-  .row-text-1, .row-text-2 {
-    text-align: left; 
-    width: 100%;
-  }
-  
-  .row-text-1 {
-    padding-left: 5%;
-    padding-right: 5%;
-  
-  }
-  
-  .row-text-2 {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 
   /* ////////// Right Row ////////// */
 
