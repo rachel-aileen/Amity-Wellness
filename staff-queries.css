@@ -32,7 +32,7 @@
 /* ////////// Intro ////////// */
 .intro-container {
     display: flex;
-    height:80vh;
+    height:70vh;
     width: 100%;
     margin: auto;
     margin-top: 10%;
@@ -92,8 +92,10 @@
   }
 
   .row.left-row .centered-image {
-    max-width: 60%; /* Controls image size, adjust as needed */
+    max-width: 80%; /* Controls image size, adjust as needed */
     height: auto; /* Maintains aspect ratio */
+    padding-top: 8%;
+    padding-bottom: 8%;
   
   }
   
