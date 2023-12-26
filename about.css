@@ -193,13 +193,21 @@ html, body {
     flex-direction: column;
     align-items: center; 
   }
+
+  .column.team a {
+    display: block; 
+    text-decoration: none;
+    margin: 0; 
+    padding: 0; 
+  }
   
   .column.team img {
-    margin-top: 0%;
-    vertical-align: middle;
+    margin: auto;
+ 
     width: 85%;
     padding-top: 8%;
     cursor: grab;
+    display: block;
   }
 
 .team-name {
