@@ -21,7 +21,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  overflow-x: hidden; 
   background-color: var(--white-color);
   scroll-behavior: smooth;
 }
@@ -56,7 +56,7 @@ html, body {
     --tran-0-5: 0.5s;
   }
 
-  /* ////////// Intro ////////// */
+/* ////////// Intro ////////// */
 .intro-container {
     display: flex;
     height: 90vh;
@@ -88,3 +88,149 @@ html, body {
     line-height: 1.8;
     padding-top: 4%;
 }
+
+/* ////////// Staff Bios ///////// */
+
+/* /// Left Row /// */
+.contact-row-container {
+    width: 100%;
+    display: flex;
+    height: auto; /* Adjusted to auto */
+    flex-direction: row;
+  }
+  
+  .row.left-row { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+ 
+  
+  #row1 {
+    background-color: var(--text-color-light);
+  }
+  
+  /* /// Right Row /// */
+  
+  .row.test2 { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start of the container */
+  }
+  
+  .row-content2 {
+    margin-left: 15%;
+    margin-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    width: 70%;
+  }
+  
+  .right-row-title {
+    font-size: 40px;
+    font-family: var(--primary-font);
+    font-weight: 100;
+     color: var(--text-color-dark);
+     padding-bottom: 8%;
+  }
+  
+  #row2 {
+    background-color: var(--tertiary-color);
+  }
+
+  /* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-row > input {
+    flex: 1;
+    background: transparent;
+    border: none; 
+    border-bottom: 1.2px solid #ccc; 
+    padding: 8px 0; 
+    margin: 0 5px; 
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 400;
+    transition: border-color var(--tran-0-3), color var(--tran-0-3); /* Smooth transition for border-color and text color */
+  
+    
+  }
+  
+  .form-row > input:focus {
+    outline: none; 
+    border-bottom: 1.2px solid var(--secondary-color); /* Changes the underline to purple */
+  }
+  
+  .form-row,
+  .form-full-width {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .form-row > input,
+  .form-full-width > textarea {
+    flex: 1 ; 
+    margin: 0 0px; 
+  }
+  
+  .form-row > input:first-child {
+    margin-right: 4%;
+  }
+  
+  
+  .form-full-width > textarea {
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .form-row > input:last-child {
+    margin-right: 0;
+    margin-left: 0px; 
+  }
+  
+  .form-row > input::placeholder,
+  .form-full-width > textarea::placeholder {
+    font-family: var(--secondary-font);
+    color: var(--secondary-text-color);
+    opacity: 1; 
+    font-size: 14px;
+  }
+  
+  .form-full-width > textarea {
+    border: 1.2px solid #ccc; 
+    transition: border-color 1s, color 1s;
+  }
+  
+  
+  textarea {
+    width: calc(100% - 10px); 
+    padding: 8px; 
+    height: 10rem;
+    resize: vertical;
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border: 1.2px solid var(--secondary-color);
+   
+  }
+  
+  
