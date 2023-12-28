@@ -130,23 +130,34 @@
 
 /* ///////Hero Section ///////*/
 
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
-  .hero-title {
-    padding-bottom: 24px;
-    font-size: 40px;
-  }
+.hero-image {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  height: 100vh; 
+}
 
-  .hero-subtitle {
-    font-size: 20px;
-    padding-bottom: 32px;
-  }
+.hero-title {
+  position: static; /* Remove absolute positioning */
+  padding-left: 0; /* Reset left padding */
+  text-align: center;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.hero-subtitle {
+  text-align: center;
+  position: absolute;
+  top: calc(60% + 4%); 
+  color: var(--text-color);
+  padding-left: 5%;
+  padding-right: 5%;
+ 
+}
+
+
 
   .cta-button {
     padding-top: 20px;

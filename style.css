@@ -174,7 +174,7 @@ header .navigation .menu{
 }
 
 
-/* ////////// About Section ////////// */
+/* ////////// Hero Section ////////// */
 .hero-image {
   position: relative;
   height: 100vh;
@@ -183,31 +183,30 @@ header .navigation .menu{
   background: url(/images/hero-img.png) no-repeat center center / cover; 
 }
 
-.hero-text {
+.hero-title {
   text-align: left;
   position: absolute;
-  top: 60%;
-  left: 21%;
-  transform: translate(-50%, -50%);
+  top: 50%;
   color: var(--text-color);
-}
-
-.hero-title {
-  font-family: var(--primary-font);                                 
+  font-family: var(--primary-font);
+  padding-left: 8%; /* Adjust this as needed for desktop view */
   padding-bottom: 32px;
   font-size: 40px;
   font-weight: 100;
-  color: var(--text-color);
 }
 
+
 .hero-subtitle {
-  font-family: var(--secondary-font);                                        
-  letter-spacing: 0.5px;
-  font-size: 20px;
-  padding-bottom: 32px;
-  font-weight: 300;
-  line-height: 1.5;
+  text-align: left;
+  position: absolute;
+  top: calc(60% + 8%); 
+  color: var(--text-color);
+  padding-left: 8%;
+  font-family: var(--secondary-font); /* Choose an appropriate font */
+  font-size: 20px; /* Adjust as needed */
+  font-weight: 400;
 }
+
 
 .hero-button {
   background-color: #A68EAF;
