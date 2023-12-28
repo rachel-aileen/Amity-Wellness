@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ally Health</title>
+
+<!-- CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="queries.css" />
+<link rel="stylesheet" href="staff.css">
+<link rel="stylesheet" href="staff-queries.css">
+
+<link href="https://fonts.cdnfonts.com/css/sweet-sans-pro" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+                
+
+
+<!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  
+<!-- Boxicons CSS -->
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+     />
+  
+<!-- Cloudflare -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/be8e761534.js" crossorigin="anonymous"></script>
+
+
+<!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  </head>
+
+
+<body>
+<!-- Navigation Bar -->
+  <header>
+    <a href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+    <div class="navigation">
+      <ul class="menu">
+        <div class="close-btn"></div>
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="about.html" class="active">About</a></li>
+        <li class="menu-item">
+          <a class="sub-btn" href="services.html">Services </a>
+          <!-- Submenu -->
+            <ul class="sub-menu">
+              <li><a href="services.html">Contraception</a></li>
+              <li><a href="menopause.html">Menopause</a></li>
+              <li><a href="pap-smear.html">Pap Smear</a></li>
+              <li><a href="pregnancy.html">Pregnancy</a></li>
+              <li><a href="uti-treatment.html">UTI Treatment</a></li>
+              <li><a href="wellness-exam.html">Wellness Exam</a></li>
+            </ul>
+          
+        </li>
+        
+        <li class="menu-item"><a href="fees.html">Fees</a></li>
+        <li class="menu-item"><a href="forms.html">Forms</a></li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="menu-btn"></div>
+  </header>
+<!-- Navbar Javascript -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        // Prevent default click action for 'Services' link on smaller screens
+        $(".sub-btn").click(function(e) {
+            if ($(window).width() < 1200) {
+                e.preventDefault(); // Prevent navigation
+                $(this).next(".sub-menu").slideToggle();
+            }
+        });
+
+        // Responsive navigation menu toggle
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+
+        // Sticky header on scroll
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        // Hide sub-menu on window resize if width is greater than 1200px
+        $(window).resize(function() {
+            if ($(window).width() > 1200) {
+                $(".sub-menu").css('display', 'none');
+            }
+        });
+
+        // Add 'active' class to the 'Services' link if on Services page
+        var servicesLink = document.querySelector('.menu-item a[href="services.html"]');
+        if (window.location.href.includes('services.html')) {
+            servicesLink.classList.add('active');
+        }
+    });
+  </script>
+
+<!--Intro -->
+<div class="intro-container">
+    <div class="intro-content">
+        <h1 class="intro-title">Elizabeth Scott</h1>
+        <h6 class="intro-text">Elizabeth has over a decade of experience as a certified ultrasound technician specializing
+            in women's health at our OBGYN clinic.
+            </h6>
+            <button class="hero-button">Schedule Appointment</button>
+    </div>
+</div>
+
+<!-- Contact Rows -->
+<div class="contact-row-container">
+    <!-- Left Row -->
+          <div class="row left-row" id="row1">
+            <img src="images/team7.png" class="centered-image">
+            <div class="row-content1">
+              
+
+            </div>      
+          </div>
+  
+    <!-- Right Row -->
+          <div class="row test2" id="row2">
+            <div class="row-content2">
+              <h1 class="right-row-title">
+                Building rapport with patients is an art, and Elizabeth strives at getting to know her patients on a personal level. 
+                Her warm demeanor helps ease any worries women often have during an ultrasound scan.
+            
+                 
+              </h1>
+              <h6 class="right-row-text">Elizabeth was raised by her grandmother, who battled a gynecological condition during the last 
+                years of her life. Her grandmother's relentness nature to continue living every day to its fullest inspired Elizabeth to 
+                pursue a career in gynecology. She is not just an expert in the technical aspects of her job but also a lifelong learner.
+                In her spare time, Elizabeth volunteers at local women's health organizations and regularly participates 
+                in community outreach programs aimed at educating women about the importance of prenatal care and early detection of 
+                gynecological conditions. 
+
+
+            
+
+              </h6>
+  
+            
+  
+               
+          
+               
+          
+              </form>
+  
+            </div>
+          </div>
+    </div>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            
+        </div>
+        <div class="footer-section links">
+            <a href="#">Fees</a>
+            <a href="#">Forms</a>
+            <a href="#">Contact</a>
+          
+        </div>
+  
+        <!-- Footer Logo -->
+        <div class="footer-section logo">
+            
+            <a href="index.html"><img src="images/footer-logo.png" class="footer-logo" alt=""></a>
+        </div>
+        <div class="footer-section back-to-top">
+            <a href="#top" class="scrollUp-btn" flex>Scroll back up!</a>
+        </div>
+        <div class="footer-section socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+      <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; Ally Health OBGYN Group 2024</p>
+        <p class="welldone-link">Brand & Website by Welldone</p>
+    </div>
+  </footer>
+
+    
+
+
+
+
+
+
+<script src="script.js"></script>
+
+  </body>
+</html>
