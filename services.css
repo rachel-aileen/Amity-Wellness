@@ -104,6 +104,7 @@ html, body {
   color: var(--secondary-text-color);
   line-height: 1.8;
   transition: color 1s;
+  letter-spacing: 0.5px;
 }
 
 .left-row-text.active {
@@ -170,6 +171,7 @@ html, body {
    color: var(--secondary-text-color);
    padding-bottom: 6%;
    line-height: 2;
+   letter-spacing: 0.5px;
 }
 
 .right-row-text {
@@ -179,4 +181,5 @@ html, body {
    color: var(--secondary-text-color);
    padding-bottom: 3%;
    line-height: 2;
+   letter-spacing: 0.5px;
 }

@@ -321,7 +321,7 @@ header .navigation .menu{
   font-weight: 400;
   line-height: 1.8;
   color: var(--tertiary-text-color);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 
@@ -449,8 +449,9 @@ header .navigation .menu{
   color: var(--secondary-text-color);
   font-family: var(--secondary-font);
   letter-spacing: 0.5px;
-  font-weight: 100;
   margin-bottom: 6%;
+  font-weight: 400;
+ 
 }
 
 .secondary-cta-button {
@@ -540,14 +541,14 @@ header .navigation .menu{
   text-align: center;
 }
 
-.card-text {
+.services-card-text {
   font-size: 17px;
+  color: var(--tertiary-text-color);
   font-family: var(--secondary-font);
   line-height: 1.8;
-  color: var(--text-color)!important;
-  letter-spacing: 0.5px;
-  font-weight: 300;
+  font-weight: 400 !important;
   margin-bottom: 20px;
+  letter-spacing: 0.5px !important;
   text-align: center;
   padding-left: 24px;
   padding-right: 24px;
@@ -609,17 +610,17 @@ header .navigation .menu{
   text-transform:capitalize;
   font-family: var(--secondary-font);
   letter-spacing: 0.5px;
-  font-weight: 100;
+  font-weight: 400;
   margin-bottom: 6%;
 }
 
 .consultation-content .section-text {
   font-size: 17px;
-  color: var(--text-color);
+  color: var(--tertiary-text-color);
   position: relative;
   font-family: var(--secondary-font);
   letter-spacing: 0.5px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 6%;
   padding-right: 25%;
 }
@@ -679,7 +680,7 @@ header .navigation .menu{
 
 .card-title.philosophy {
   font-size: 24px;
-  color: var(--secondary-text-color) !important;
+  color: var(--tertiary-text-color);
   font-family: var(--primary-font);
   letter-spacing: 0.5px;
   font-weight: 100;
@@ -688,13 +689,13 @@ header .navigation .menu{
   padding-bottom: 4%;
 }
 
-.card-text {
+.philosophy-card-text {
   font-size: 17px;
   font-family: var(--secondary-font);
   line-height: 1.8;
-  color: var(--text-color);
+  color: var(--tertiary-text-color);
   letter-spacing: 0.5px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
   padding-left: 24px;
@@ -868,11 +869,11 @@ header .navigation .menu{
 
 .pregnancy-content .section-text {
   font-size: 17px;
-  color: var(--text-color);
+  color: var(--tertiary-text-color);
   position: relative;
   font-family: var(--secondary-font);
   letter-spacing: 0.5px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 6%;
   padding-right: 25%;
   line-height: 1.8;
@@ -937,9 +938,9 @@ header .navigation .menu{
   font-size: 17px;
   font-family: var(--secondary-font);
   line-height: 1.8;
-  color: var(--text-color)!important;
+  color: var(--tertiary-text-color);
   letter-spacing: 0.5px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 20px;
   text-align: center;
   padding-left: 24px;

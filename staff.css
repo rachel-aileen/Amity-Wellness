@@ -84,11 +84,12 @@ html, body {
 .intro-text {
     font-size: 17px;
     font-family: var(--secondary-font);
-    color: var(--text-color);
+    color: var(--secondary-text-color);
     font-weight: 400;
     line-height: 1.8;
     padding-top: 4%;
     padding-bottom: 4%;
+    letter-spacing: 0.5px;
 }
 
 /* ////////// Staff Bios ///////// */
@@ -150,9 +151,10 @@ html, body {
   .right-row-text {
     font-size: 17px;
     font-family: var(--secondary-font);
-    font-weight: 100;
-     color: var(--tertiary-text-color);
-     line-height: 1.8;
+    font-weight: 400;
+    color: var(--tertiary-text-color);
+    line-height: 1.8;
+    letter-spacing: 0.5px;
     
   }
   
@@ -160,96 +162,5 @@ html, body {
     background-color: var(--tertiary-color);
   }
 
-  /* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 50px; 
-  }
-  
-  .form-row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .form-row > input {
-    flex: 1;
-    background: transparent;
-    border: none; 
-    border-bottom: 1.2px solid #ccc; 
-    padding: 8px 0; 
-    margin: 0 5px; 
-    color: var(--text-color);
-    font-family: var(--secondary-font);
-    font-size: 16px;
-    font-weight: 400;
-    transition: border-color var(--tran-0-3), color var(--tran-0-3); /* Smooth transition for border-color and text color */
-  
-    
-  }
-  
-  .form-row > input:focus {
-    outline: none; 
-    border-bottom: 1.2px solid var(--secondary-color); /* Changes the underline to purple */
-  }
-  
-  .form-row,
-  .form-full-width {
-    display: flex;
-    justify-content: space-between;
-  
-  }
-  
-  .form-row > input,
-  .form-full-width > textarea {
-    flex: 1 ; 
-    margin: 0 0px; 
-  }
-  
-  .form-row > input:first-child {
-    margin-right: 4%;
-  }
-  
-  
-  .form-full-width > textarea {
-    margin-left: 0;
-    margin-right: 0px;
-  }
-  
-  .form-row > input:last-child {
-    margin-right: 0;
-    margin-left: 0px; 
-  }
-  
-  .form-row > input::placeholder,
-  .form-full-width > textarea::placeholder {
-    font-family: var(--secondary-font);
-    color: var(--secondary-text-color);
-    opacity: 1; 
-    font-size: 14px;
-  }
-  
-  .form-full-width > textarea {
-    border: 1.2px solid #ccc; 
-    transition: border-color 1s, color 1s;
-  }
-  
-  
-  textarea {
-    width: calc(100% - 10px); 
-    padding: 8px; 
-    height: 10rem;
-    resize: vertical;
-    color: var(--text-color);
-    font-family: var(--secondary-font);
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  textarea:focus {
-    outline: none;
-    border: 1.2px solid var(--secondary-color);
-   
-  }
-  
+ 
   
