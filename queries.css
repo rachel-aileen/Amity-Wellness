@@ -131,7 +131,7 @@
 /* ///////Hero Section ///////*/
 
 .hero-image {
-  height: 50vh; /* Sets the height of the hero image to be automatic */
+  height: 55vh; /* Sets the height of the hero image to be automatic */
 }
 
 
@@ -208,7 +208,7 @@
 
    .services-container {
     margin-top: 56px;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .row {

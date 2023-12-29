@@ -298,7 +298,7 @@ header .navigation .menu{
 .mobile-title,
 .mobile-subtitle, 
 .mobile-button {
-  margin-bottom: 4%; 
+  margin-bottom: 3%; 
 }
 
 .mobile-text-container > :last-child {
@@ -322,6 +322,7 @@ header .navigation .menu{
   line-height: 1.8;
   color: var(--tertiary-text-color);
   letter-spacing: 0.5px;
+  margin-right: 5%;
 }
 
 
@@ -498,7 +499,7 @@ header .navigation .menu{
 
 /* ////////// Services ////////// */
 .services-container {
-  max-width: 85%;
+  max-width: 87%;
   margin: 0 auto;
 }
 
