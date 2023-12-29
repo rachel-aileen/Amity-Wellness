@@ -192,6 +192,7 @@ header .navigation .menu{
   align-items: flex-start;
   text-align: left;
   padding-left: 8%;
+  padding-top: 8%;
 }
 
 
@@ -229,11 +230,16 @@ header .navigation .menu{
   background-color: #A68EAF;
   transition: background-color 1s;
   border: none; 
-  cursor: grabbing;
+  cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 4px; 
   font-weight: 500;
   font-family: var(--button-font);
+}
+
+.home-button:hover {
+  background-color: var(--primary-color-hover);
+  color: white;
 }
 
 
@@ -247,7 +253,7 @@ header .navigation .menu{
   text-transform: uppercase;
   transition: background-color 1s;
   letter-spacing: 4px;
-  cursor: grab;
+  cursor: pointer;
   font-weight: 500;
 
 }
@@ -267,7 +273,7 @@ header .navigation .menu{
   text-transform: uppercase;
   transition: background-color 1s;
   letter-spacing: 2px;
-  cursor: grab;
+  cursor: pointer;
   font-weight: 500;
 }
 
@@ -392,7 +398,7 @@ header .navigation .menu{
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: color 1s;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .secondary-cta-button:hover:hover {
@@ -411,7 +417,7 @@ header .navigation .menu{
   text-transform: uppercase;
   transition: color 1s;
   letter-spacing: 2px;
-  cursor: grab;
+  cursor: pointer;
   font-weight: 500;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -929,7 +935,7 @@ header .navigation .menu{
   text-transform: uppercase;
   transition: background-color 1s;
   letter-spacing: 2px;
-  cursor: grab;
+  cursor: pointer;
   font-weight: 500;
 
 }

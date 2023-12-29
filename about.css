@@ -94,7 +94,7 @@ html, body {
     text-transform: uppercase;
     transition: background-color 1s;
     letter-spacing: 2px;
-    cursor: grab;
+    cursor: pointer;
     font-weight: 500;
   }
   
@@ -206,7 +206,7 @@ html, body {
  
     width: 85%;
     padding-top: 8%;
-    cursor: grab;
+    cursor: pointer;
     display: block;
   }
 
@@ -217,7 +217,7 @@ html, body {
     font-weight: 100;
     color: var(--tertiary-text-color);
     margin-top: 6%;
-    cursor: grab;
+    cursor: pointer;
   }
 
 .team-position {
