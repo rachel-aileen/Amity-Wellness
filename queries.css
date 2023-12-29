@@ -130,17 +130,14 @@
 
 /* ///////Hero Section ///////*/
 
-
 .hero-image {
-  height: 55vh; /* Sets the height of the hero image to be automatic */
+  height: 50vh; /* Sets the height of the hero image to be automatic */
 }
 
 
 .hero-title, .hero-subtitle, .home-button {
   display: none; /* This will make both elements disappear */
 }
-
-
 
 
   .cta-button {
@@ -157,7 +154,7 @@
   /*////////// Overview ////////// */
 
   .overview-popup {
-    margin-top: 15%;
+    margin-top: 20%;
     font-size: 28px;
     font-family: 'Canela Text Trial', sans-serif; 
     font-weight: 100;

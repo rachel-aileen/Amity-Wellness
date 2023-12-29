@@ -263,6 +263,7 @@ header .navigation .menu{
   color: white;
 }
 
+
 .cta-button {
   background-color: var(--primary-color-hover);
   border: none;
@@ -280,6 +281,71 @@ header .navigation .menu{
 .cta-button:hover {
   background-color: var(--primary-color);
 }
+
+
+/* ////////// Mobile Hero Container ////////// */
+.mobile-hero-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 5%;
+ 
+}
+
+
+.mobile-title,
+.mobile-subtitle, 
+.mobile-button {
+  margin-bottom: 4%; 
+}
+
+.mobile-text-container > :last-child {
+  margin-bottom: 0;
+}
+
+
+.mobile-title {
+  font-family: var(--primary-font);
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 1.4;
+  color: var(--tertiary-text-color);
+  letter-spacing: 0.3px;
+}
+
+.mobile-subtitle {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--tertiary-text-color);
+  letter-spacing: 1px;
+}
+
+
+.mobile-button {
+  padding: 20px 32px; 
+  margin-top: 20px; 
+  font-size: 14px;
+  color: #FFFFFF; 
+  background-color: #A68EAF;
+  transition: background-color 1s;
+  border: none; 
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 4px; 
+  font-weight: 500;
+  font-family: var(--button-font);
+}
+
+@media (min-width: 1201px) {
+  .mobile-hero-container {
+    display: none; /* Hide the container on large screens */
+  }
+}
+
 
 /* ////////// Overview ////////// */
 
