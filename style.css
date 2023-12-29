@@ -175,36 +175,65 @@ header .navigation .menu{
 
 
 /* ////////// Hero Section ////////// */
+
 .hero-image {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-size: cover;
+  display: flex; 
+  align-items: center; 
+  
   background: url(/images/hero-img.png) no-repeat center center / cover; 
 }
 
-.hero-title {
+.hero-text-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start;
   text-align: left;
-  position: absolute;
-  top: 50%;
+  padding-left: 8%;
+}
+
+
+.hero-title,
+.hero-subtitle, 
+.home-button {
+  margin-bottom: 4%; 
   color: var(--text-color);
+}
+
+.hero-text-container > :last-child {
+  margin-bottom: 0;
+}
+
+
+
+.hero-title {
   font-family: var(--primary-font);
-  padding-left: 8%; /* Adjust this as needed for desktop view */
-  padding-bottom: 32px;
   font-size: 40px;
   font-weight: 100;
 }
 
-
 .hero-subtitle {
-  text-align: left;
-  position: absolute;
-  top: calc(60% + 8%); 
-  color: var(--text-color);
-  padding-left: 8%;
-  font-family: var(--secondary-font); /* Choose an appropriate font */
-  font-size: 20px; /* Adjust as needed */
+  font-family: var(--secondary-font);
+  font-size: 20px;
   font-weight: 400;
+}
+
+
+.home-button {
+  padding: 20px 32px; 
+  margin-top: 20px; 
+  font-size: 14px;
+  color: #FFFFFF; 
+  background-color: #A68EAF;
+  transition: background-color 1s;
+  border: none; 
+  cursor: grabbing;
+  text-transform: uppercase;
+  letter-spacing: 4px; 
+  font-weight: 500;
+  font-family: var(--button-font);
 }
 
 

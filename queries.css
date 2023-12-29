@@ -132,30 +132,14 @@
 
 
 .hero-image {
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  text-align: center; 
-  height: 100vh; 
+  height: 55vh; /* Sets the height of the hero image to be automatic */
 }
 
-.hero-title {
-  position: static; /* Remove absolute positioning */
-  padding-left: 0; /* Reset left padding */
-  text-align: center;
-  padding-right: 5%;
-  padding-left: 5%;
+
+.hero-title, .hero-subtitle, .home-button {
+  display: none; /* This will make both elements disappear */
 }
 
-.hero-subtitle {
-  text-align: center;
-  position: absolute;
-  top: calc(60% + 4%); 
-  color: var(--text-color);
-  padding-left: 5%;
-  padding-right: 5%;
- 
-}
 
 
 
