@@ -1,5 +1,22 @@
 @media (max-width: 1200px){
 
+@import url('https://fonts.cdnfonts.com/css/canela-text-trial');
+@import url('https://fonts.cdnfonts.com/css/hk-groteks');
+@import url('https://fonts.cdnfonts.com/css/sweet-sans-pro?weight=400,500,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+@font-face{
+  font-family: 'Sweet Sans Pro';
+  src: url('/public/sweet-sans-pro-fonts/SweetSansProLight.otf');
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'Sweet Sans Pro, Bold';
+  src: url('/public/sweet-sans-pro-fonts/SweetSansProBold.otf');
+  font-weight: bold;
+}
+
   :root {
     /* Font Sizes & Family */
     --primary-font: 'Canela Text Trial', sans-serif;
@@ -71,7 +88,7 @@
   
     .close-btn{
       position: absolute;
-      background: url(/close.png)no-repeat;
+      background: url(https://firebasestorage.googleapis.com/v0/b/ally-health-obgyn.appspot.com/o/close.png?alt=media&token=93b8d1fe-14c2-497d-86bf-9d7df8e205d3)no-repeat;
       width: 40px;
       height: 40px;
       background-size: 40px;
@@ -83,7 +100,7 @@
     }
   
     .menu-btn{
-      background: url(/menu.png)no-repeat;
+      background: url(https://firebasestorage.googleapis.com/v0/b/ally-health-obgyn.appspot.com/o/menu.png?alt=media&token=3f47b463-8293-4b0c-add1-7cbb7ea037b1) no-repeat;
       width: 40px;
       height: 40px;
       background-size: 40px;
@@ -102,6 +119,8 @@
 
     .menu-item > a{                              
       font-size: 13px;
+      color: green;
+      font-family: var(--button-font);
     }
 
     /* ////////// Submenu ////////// */
@@ -124,6 +143,7 @@
       font-family: var(--button-font-light);
       text-transform: uppercase;
       letter-spacing: 2px;
+  
     }
 
 

@@ -4,14 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 @font-face{
-  font-family: 'Sweet Sans Pro, Medium';
-  src: url('/sweet-sans-pro-fonts/SweetSansProLight.otf');
+  font-family: 'Sweet Sans Pro';
+  src: url('/public/sweet-sans-pro-fonts/SweetSansProLight.otf');
   font-weight: normal;
 }
 
 @font-face{
   font-family: 'Sweet Sans Pro, Bold';
-  src: url('/sweet-sans-pro-fonts/SweetSansProBold.otf');
+  src: url('/public/sweet-sans-pro-fonts/SweetSansProBold.otf');
   font-weight: bold;
 }
 
@@ -37,7 +37,7 @@ html, body {
   --secondary-font: 'HK Grotesk', sans-serif;  
   --button-font: "Sweet Sans Pro, Bold";
   --button-font-light: 'Sweet Sans Pro', serif;
-  --button-font-regular: 'Sweet Sand Pro, Regular';
+  
 
 
   /* Color Variables */
@@ -109,7 +109,7 @@ header .navigation .menu{
 
 .menu-item > a{
   color: var(--secondary-text-color);
-  font-family: var(--button-font-light);                                
+  font-family: var(--button-font-light) ;                       
   font-size: 11px;
   font-weight: 100;
   text-decoration: none;
@@ -182,8 +182,7 @@ header .navigation .menu{
   overflow: hidden;
   display: flex; 
   align-items: center; 
-  
-  background: url(/images/hero-img.png) no-repeat center center / cover; 
+  background: url(https://firebasestorage.googleapis.com/v0/b/ally-health-obgyn.appspot.com/o/hero-img.png?alt=media&token=6828a2ef-5a56-4683-be69-8f4fd233b87f) no-repeat center center / cover; 
 }
 
 .hero-text-container {
