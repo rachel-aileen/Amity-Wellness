@@ -13,7 +13,7 @@
 
 @font-face{
   font-family: 'Sweet Sans Pro, Bold';
-  src: url('/public/sweet-sans-pro-fonts/SweetSansProBold.otf');
+  src: url('/sweet-sans-pro-fonts/SweetSansProBold.otf');
   font-weight: bold;
 }
 
@@ -119,8 +119,8 @@
 
     .menu-item > a{                              
       font-size: 13px;
-      color: green;
-      font-family: var(--button-font);
+      color: var(--secondary-text-color);
+      font-family: var(--button-font-light);
     }
 
     /* ////////// Submenu ////////// */

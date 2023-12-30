@@ -232,8 +232,8 @@ header .navigation .menu{
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 4px; 
-  font-weight: 500;
   font-family: var(--button-font);
+ 
 }
 
 .home-button:hover {
