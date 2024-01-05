@@ -54,7 +54,7 @@
     header .navigation .menu{
       position: fixed;
       display: block;
-      background: var(--tertiary-color);
+      background: orange;
       min-width: 100%;
       height: 100vh;
       top: 0;
@@ -119,7 +119,7 @@
 
     .menu-item > a{                              
       font-size: 13px;
-      color: var(--secondary-text-color);
+      color: blue;
       font-family: var(--button-font-light);
     }
 

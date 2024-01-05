@@ -128,28 +128,7 @@ header .navigation .menu{
 
 
 
-.more .more-menu{
-  position: absolute;
-  background: white;
-  list-style: none;
-  top: 0;
-  left: 100%;
-  white-space: nowrap;
-  border-radius: 0 8px 8px 8px;
-  overflow: hidden;
-  pointer-events: none;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: 0.3s;
-  transition-property: transform, opacity;
-}
 
-.more:hover .more-menu{
-  pointer-events: all;
-  transform: translateY(0);
-  opacity: 1;
-  transition: color 1s;
-}
 
 .more .more-menu .more-item{
   padding: 7px 0;
